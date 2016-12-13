@@ -1,0 +1,6 @@
+vhdl work "shift_left.vhd"
+vhdl work "Program_Counter.vhd"
+vhdl work "MUX.vhd"
+vhdl work "InstructionMemory.vhd"
+vhdl work "ADDER.vhd"
+vhdl work "Instruction_Fetch.vhd"

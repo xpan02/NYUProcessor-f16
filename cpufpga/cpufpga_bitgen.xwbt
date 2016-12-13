@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\NYU VHDL\cpufpga\cpufpga.ncd
+OUTFILE=C:\NYU VHDL\cpufpga\cpufpga.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\NYU VHDL\cpufpga
+LICENSE=WebPack
+USER_INFO=211236031_0_0_979

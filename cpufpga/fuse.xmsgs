@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 146: Formal port &lt;<arg fmt="%s" index="1">clk</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">cpu</arg>&gt; to its component declaration and its instantion to detect the mismatch.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 147: Formal port &lt;<arg fmt="%s" index="1">reset</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">cpu</arg>&gt; to its component declaration and its instantion to detect the mismatch.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 148: Formal port &lt;<arg fmt="%s" index="1">sel</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">cpu</arg>&gt; to its component declaration and its instantion to detect the mismatch.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 149: Formal port &lt;<arg fmt="%s" index="1">skey</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">cpu</arg>&gt; to its component declaration and its instantion to detect the mismatch.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 150: Formal port &lt;<arg fmt="%s" index="1">din</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">cpu</arg>&gt; to its component declaration and its instantion to detect the mismatch.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 151: Formal port &lt;<arg fmt="%s" index="1">valid</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">cpu</arg>&gt; to its component declaration and its instantion to detect the mismatch.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 152: Formal port &lt;<arg fmt="%s" index="1">dout</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">cpu</arg>&gt; to its component declaration and its instantion to detect the mismatch.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 153: Formal port &lt;<arg fmt="%s" index="1">data_vld</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">cpu</arg>&gt; to its component declaration and its instantion to detect the mismatch.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1156" delta="unknown" >"C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 154: Formal port &lt;<arg fmt="%s" index="1">instruction</arg>&gt; does not exist in entity &lt;<arg fmt="%s" index="2">cpu</arg>&gt;.  Please compare the definition of block &lt;<arg fmt="%s" index="3">cpu</arg>&gt; to its component declaration and its instantion to detect the mismatch.
+</msg>
+
+<msg type="error" file="Simulator" num="777" delta="unknown" >Static elaboration of top level VHDL design unit <arg fmt="%s" index="1">cputest</arg> in library <arg fmt="%s" index="2">work</arg> failed
+</msg>
+
+</messages>
+

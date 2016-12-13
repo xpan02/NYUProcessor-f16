@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/NYU VHDL/NYU_6463_Processor/Instruction_Fetch.xst" -ofn "C:/NYU VHDL/NYU_6463_Processor/Instruction_Fetch.syr" 

@@ -1,0 +1,19 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/NYU VHDL/cpufpga/cputest_isim_beh.exe -prj C:/NYU VHDL/cpufpga/cputest_beh.prj work.cputest 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/NYU VHDL/cpufpga/cputest.vhd" into library work
+Parsing VHDL file "C:/NYU VHDL/cpufpga/cpufpga.vhd" into library work
+Parsing VHDL file "C:/NYU VHDL/cpufpga/cpu.vhd" into library work
+Starting static elaboration
+ERROR:HDLCompiler:1156 - "C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 146: Formal port <clk> does not exist in entity <cpu>.  Please compare the definition of block <cpu> to its component declaration and its instantion to detect the mismatch.
+ERROR:HDLCompiler:1156 - "C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 147: Formal port <reset> does not exist in entity <cpu>.  Please compare the definition of block <cpu> to its component declaration and its instantion to detect the mismatch.
+ERROR:HDLCompiler:1156 - "C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 148: Formal port <sel> does not exist in entity <cpu>.  Please compare the definition of block <cpu> to its component declaration and its instantion to detect the mismatch.
+ERROR:HDLCompiler:1156 - "C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 149: Formal port <skey> does not exist in entity <cpu>.  Please compare the definition of block <cpu> to its component declaration and its instantion to detect the mismatch.
+ERROR:HDLCompiler:1156 - "C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 150: Formal port <din> does not exist in entity <cpu>.  Please compare the definition of block <cpu> to its component declaration and its instantion to detect the mismatch.
+ERROR:HDLCompiler:1156 - "C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 151: Formal port <valid> does not exist in entity <cpu>.  Please compare the definition of block <cpu> to its component declaration and its instantion to detect the mismatch.
+ERROR:HDLCompiler:1156 - "C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 152: Formal port <dout> does not exist in entity <cpu>.  Please compare the definition of block <cpu> to its component declaration and its instantion to detect the mismatch.
+ERROR:HDLCompiler:1156 - "C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 153: Formal port <data_vld> does not exist in entity <cpu>.  Please compare the definition of block <cpu> to its component declaration and its instantion to detect the mismatch.
+ERROR:HDLCompiler:1156 - "C:/NYU VHDL/cpufpga/cpufpga.vhd" Line 154: Formal port <instruction> does not exist in entity <cpu>.  Please compare the definition of block <cpu> to its component declaration and its instantion to detect the mismatch.
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit cputest in library work failed

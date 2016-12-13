@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\NYU VHDL\NYU_6463_Processor\Instruction_Fetch.vhd" Line 94: Assignment to <arg fmt="%s" index="1">jumpimm</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\NYU VHDL\NYU_6463_Processor\InstructionMemory.vhd" Line 57: Net &lt;<arg fmt="%s" index="1">imem[0][31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">btnU</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">btnD</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\NYU VHDL\cpufpga\cpufpga.vhd</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">instruction</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cpuall</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;63&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;62&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;61&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;60&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;59&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;58&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;57&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;56&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;55&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;54&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;53&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;52&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;51&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;50&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;49&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;48&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;47&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;46&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;45&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;44&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;43&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;42&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;41&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;40&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;39&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;38&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;37&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;36&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;35&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;34&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;33&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;32&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;31&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;30&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;29&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;28&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;27&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;26&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;25&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;24&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;23&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;22&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;21&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;20&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;19&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;18&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;17&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;16&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;15&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;14&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;13&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;12&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;11&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;10&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;9&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;8&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">output&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\NYU VHDL\NYU_6463_Processor\cpu.vhd</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">PCSrc</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CtrlUn</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\NYU VHDL\NYU_6463_Processor\cpu.vhd</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">shiftl</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CtrlUn</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\NYU VHDL\NYU_6463_Processor\cpu.vhd</arg>&quot; line <arg fmt="%s" index="2">166</arg>: Output port &lt;<arg fmt="%s" index="3">shiftr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">CtrlUn</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">address&lt;31:5&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">rdmemen</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">address&lt;31:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;0&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000000100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;1&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000001000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;2&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000001100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;4&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010111110111100000000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;6&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000011110111011111000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;7&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00100000000111100000000000011010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;9&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010111110111100000000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;11&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000011110111011111000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;12&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00100000000111100000000000011011</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;14&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010111110111100000000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;16&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000011110111011111000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;17&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00100000000111100000000000011100</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;19&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010111110111100000000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;21&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000011110111011111000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;22&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00100000000111100000000000011101</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;23&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100000101010000000000000100</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;24&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100000101100000000000011010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;25&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100000101110000000001001110</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;26&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000010000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;27&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000010100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;28&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011100010010000000000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;29&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011100001010010000000000011010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;30&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100001010011000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;31&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001000001100101000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;32&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100000010110000000000000011</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;33&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000110000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;34&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00101001011011000000000000000101</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;35&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010101010011010000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;36&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011001010011100000000000011111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;37&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001101011100101000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;38&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000101100011000000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;39&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00110000000000000000000000100010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;40&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00100000010010100000000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;41&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000010100010000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;42&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100001010011000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;43&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001001001100101000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;44&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00001100110010110000000000011111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;45&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000110000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;46&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00101001011011000000000000000101</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;47&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010101010011010000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;48&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011001010011100000000000011111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;49&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001101011100101000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;50&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000101100011000000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;51&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00110000000000000000000000101110</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;52&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00100000001010100000000000011010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;53&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000010100010100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;54&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100001000010000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;55&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100010000100000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;56&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100011000110000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;57&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00101100001101010000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;58&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000000100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;59&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00101100010101100000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;60&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000001000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;61&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00101000011101110000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;62&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00110000000000000000000000011100</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;63&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000001100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;64&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100000111100000000000011010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;65&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000010000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;66&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000010100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;68&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010100100001000000000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;70&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100111010010000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;72&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010100101001010000000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;74&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000101111010010100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;75&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011100011111110000000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;76&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100111110010000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;77&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011100011111110000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;78&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000101111110010100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;79&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100011000110000000000000010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;80&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100000000011000000010100</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;81&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000101000000011100000010100</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;82&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100001110011100000010010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;83&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000101001100011000000010010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;84&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000110001110100000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;85&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00001100101001110000000000011111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;86&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000011000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;87&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000010000100100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;88&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00101000110001110000000000000101</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;89&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010101001010100000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;90&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011001001010110000000000011111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;91&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001010010110100100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;92&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100110001100000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;93&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00110000000000000000000001011000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;94&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011100011111110000000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;95&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001001111110010000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;96&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100000000011000000010100</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;97&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000101000000011100000010100</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;98&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100001110011100000010010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;99&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000101001100011000000010010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;100&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000110001110110000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;101&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00001100100001110000000000011111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;102&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000011000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;103&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000011000110100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;104&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00101000110001110000000000000101</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;105&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010101101010100000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;106&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011001101010110000000000011111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;107&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001010010110110100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;108&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100110001100000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;109&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00110000000000000000000001101000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;110&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011100011111110000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;111&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001101111110010100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;112&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100011000110000000000000010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;113&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00101000011111100000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;114&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00110000000000000000000001010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;115&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000001000100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;116&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000001001000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;117&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000001001000100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;118&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000001011001000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;119&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000010000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;120&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000010100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;122&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010100100001000000000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;124&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100111010010000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;126&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010100101001010000000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;128&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000101111010010100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;129&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000100000000110000000000011000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;130&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011100011010000000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;131&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000101010000011100000010001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;132&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00001100100010010000000000011111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;133&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000100000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;134&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000001110101100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;135&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00101001000010010000000000000101</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;136&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011001011011000000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;137&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010101011011010000000000011111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;138&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001100011010101100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;139&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000101000010000000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;140&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00110000000000000000000010000111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;141&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100000000100000000010100</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;142&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001011000000100100000010100</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;143&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100010010100100000010010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;144&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001000010110100000000010010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;145&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001000010010010100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;146&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011100011010000000000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;147&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100010000011000000010001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;148&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00001100101010010000000000011111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;149&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000000000100000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;150&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000001100101000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;151&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00101001000010010000000000000101</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;152&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011001010011000000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;153&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00010101010011010000000000011111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;154&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001100011010101000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;155&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000101000010000000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;156&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00110000000000000000000010010111</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;157&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001010000000100000000010100</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;158&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000101000000100100000010100</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;159&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001010010010100100000010010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;160&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000101010000100000000010010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;161&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000001000010010010000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;162&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00001000011000110000000000000010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;163&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00101000011000000000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;164&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00110000000000000000000010000010</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;165&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011100011010000000000000000001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;166&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000101010000010100000010001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;167&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00011100011010000000000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;168&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000100010000010000000010001</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;169&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000001011100100000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;170&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">00000000000001001100000000010000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">imem&lt;171&gt;</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InstructionMemory</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">11111100000000000000000000000000</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">func&lt;5:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3019" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">1024</arg> flip-flops were inferred for signal &lt;<arg fmt="%s" index="2">regmem</arg>&gt;. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+</msg>
+
+<msg type="info" file="Xst" num="3019" delta="old" >HDL ADVISOR - <arg fmt="%s" index="1">1024</arg> flip-flops were inferred for signal &lt;<arg fmt="%s" index="2">regmem</arg>&gt;. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_datamem</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig32</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig1</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig2</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig3</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig4</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig5</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig6</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig7</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig8</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig9</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig10</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig11</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig12</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig13</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig14</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig15</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig16</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig17</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig18</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig19</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig20</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig21</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig22</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig23</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig24</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig25</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig26</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig27</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig28</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig29</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig30</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_dig31</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di16</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di1</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di2</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di3</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di4</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di5</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di6</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di7</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di8</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di9</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di10</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di11</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di12</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di13</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di14</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_di15</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">j_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpufpga</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">j_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpufpga</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">i_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpufpga</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">i_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpufpga</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">cpuall/InstrFetch/PC/output_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">cpufpga</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">j_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpufpga</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">j_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpufpga</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">i_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpufpga</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">i_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">cpufpga</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+</messages>

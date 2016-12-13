@@ -1,0 +1,766 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf
+
+Design file:              cpufpga.ncd
+Physical constraint file: cpufpga.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 827799396 paths analyzed, 2626 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   9.933ns.
+--------------------------------------------------------------------------------
+
+Paths for end point cpuall/InstrFetch/PC/output_6 (SLICE_X39Y25.AX), 5942608 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.067ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cpuall/InstrFetch/PC/output_2 (FF)
+  Destination:          cpuall/InstrFetch/PC/output_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.858ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.040ns (0.558 - 0.598)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cpuall/InstrFetch/PC/output_2 to cpuall/InstrFetch/PC/output_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y24.CQ      Tcko                  0.341   cpuall/InstrFetch/PC/output<3>
+                                                       cpuall/InstrFetch/PC/output_2
+    SLICE_X37Y24.B2      net (fanout=229)      0.834   cpuall/InstrFetch/PC/output<2>
+    SLICE_X37Y24.B       Tilo                  0.097   N231
+                                                       cpuall/InstrFetch/InstrMem/Instruction<17>10_SW2
+    SLICE_X27Y20.C3      net (fanout=1)        0.725   N231
+    SLICE_X27Y20.C       Tilo                  0.097   N232
+                                                       cpuall/InstrFetch/InstrMem/Instruction<17>10
+    SLICE_X28Y25.D2      net (fanout=259)      1.024   cpuall/instr<17>
+    SLICE_X28Y25.D       Tilo                  0.097   cpuall/RegFile/regmem_1<23>
+                                                       cpuall/RegFile/mux47_92
+    SLICE_X28Y24.D3      net (fanout=1)        0.973   cpuall/RegFile/mux47_92
+    SLICE_X28Y24.D       Tilo                  0.097   cpuall/RegFile/regmem_0<23>
+                                                       cpuall/RegFile/mux47_4
+    SLICE_X28Y27.C2      net (fanout=2)        0.891   cpuall/RegFile/mux47_4
+    SLICE_X28Y27.C       Tilo                  0.097   cpuall/RegFile/regmem_2<30>
+                                                       cpuall/RegFile/Mmux_rddata2161
+    SLICE_X31Y20.D5      net (fanout=3)        0.591   cpuall/RegData2<23>
+    SLICE_X31Y20.COUT    Topcyd                0.396   cpuall/ALUMAIN/Madd_A_input[31]_B_input[31]_add_5_OUT_cy<23>
+                                                       cpuall/ALUMAIN/Madd_A_input[31]_B_input[31]_add_5_OUT_lut<23>
+                                                       cpuall/ALUMAIN/Madd_A_input[31]_B_input[31]_add_5_OUT_cy<23>
+    SLICE_X31Y21.CIN     net (fanout=1)        0.000   cpuall/ALUMAIN/Madd_A_input[31]_B_input[31]_add_5_OUT_cy<23>
+    SLICE_X31Y21.DMUX    Tcind                 0.371   cpuall/ALUMAIN/Madd_A_input[31]_B_input[31]_add_5_OUT_cy<27>
+                                                       cpuall/ALUMAIN/Madd_A_input[31]_B_input[31]_add_5_OUT_cy<27>
+    SLICE_X25Y27.B2      net (fanout=1)        0.882   cpuall/ALUMAIN/A_input[31]_B_input[31]_add_5_OUT<27>
+    SLICE_X25Y27.B       Tilo                  0.097   cpuall/RegFile/regmem_6<27>
+                                                       cpuall/ALUMAIN/Mmux_ALU_output207
+    SLICE_X39Y24.A2      net (fanout=2)        1.004   cpuall/ALUMAIN/Mmux_ALU_output206
+    SLICE_X39Y24.A       Tilo                  0.097   cpuall/InstrFetch/PC/output<3>
+                                                       cpuall/ALUMAIN/zero5
+    SLICE_X38Y22.B2      net (fanout=8)        0.644   cpuall/ALUMAIN/zero4
+    SLICE_X38Y22.B       Tilo                  0.097   cpuall/InstrFetch/next_pc<6>
+                                                       cpuall/InstrFetch/nextpcMUX/Mmux_output52
+    SLICE_X39Y25.AX      net (fanout=2)        0.380   cpuall/InstrFetch/next_pc<6>
+    SLICE_X39Y25.CLK     Tdick                 0.026   cpuall/InstrFetch/PC/output<5>
+                                                       cpuall/InstrFetch/PC/output_6
+    -------------------------------------------------  ---------------------------
+    Total                                      9.858ns (1.910ns logic, 7.948ns route)
+                                                       (19.4% logic, 80.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.104ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cpuall/InstrFetch/PC/output_0 (FF)
+  Destination:          cpuall/InstrFetch/PC/output_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.821ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.040ns (0.558 - 0.598)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cpuall/InstrFetch/PC/output_0 to cpuall/InstrFetch/PC/output_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y24.BQ      Tcko                  0.341   cpuall/InstrFetch/PC/output<3>
+                                                       cpuall/InstrFetch/PC/output_0
+    SLICE_X38Y23.D2      net (fanout=180)      0.808   cpuall/InstrFetch/PC/output<0>
+    SLICE_X38Y23.CMUX    Topdc                 0.397   N180
+                                                       cpuall/InstrFetch/InstrMem/Instruction<23>10_F
+                                                       cpuall/InstrFetch/InstrMem/Instruction<23>10
+    SLICE_X29Y19.A5      net (fanout=1)        0.971   cpuall/InstrFetch/InstrMem/Instruction<23>9
+    SLICE_X29Y19.A       Tilo                  0.097   cpuall/RegFile/mux9_9
+                                                       cpuall/InstrFetch/InstrMem/Instruction<23>12
+    SLICE_X27Y20.B4      net (fanout=66)       0.831   cpuall/instr<23>
+    SLICE_X27Y20.B       Tilo                  0.097   N232
+                                                       cpuall/RegFile/GND_49_o_rdreg1[4]_equal_1_o<4>1
+    SLICE_X32Y13.C3      net (fanout=58)       0.970   cpuall/RegFile/GND_49_o_rdreg1[4]_equal_1_o
+    SLICE_X32Y13.C       Tilo                  0.097   cpuall/RegFile/mux_3
+                                                       cpuall/RegFile/Mmux_rddata1110
+    SLICE_X31Y15.AX      net (fanout=9)        0.455   cpuall/RegData1<0>
+    SLICE_X31Y15.COUT    Taxcy                 0.392   cpuall/ALUMAIN/Madd_A_input[31]_B_input[31]_add_5_OUT_cy<3>
+                                                       cpuall/ALUMAIN/Madd_A_input[31]_B_input[31]_add_5_OUT_cy<3>
+    SLICE_X31Y16.CIN     net (fanout=1)        0.000   cpuall/ALUMAIN/Madd_A_input[31]_B_input[31]_add_5_OUT_cy<3>
+    SLICE_X31Y16.DMUX    Tcind                 0.371   cpuall/ALUMAIN/Madd_A_input[31]_B_input[31]_add_5_OUT_cy<7>
+                                                       cpuall/ALUMAIN/Madd_A_input[31]_B_input[31]_add_5_OUT_cy<7>
+    SLICE_X40Y14.A2      net (fanout=1)        0.980   cpuall/ALUMAIN/A_input[31]_B_input[31]_add_5_OUT<7>
+    SLICE_X40Y14.A       Tilo                  0.097   cpuall/RegFile/regmem_19<3>
+                                                       cpuall/ALUMAIN/Mmux_ALU_output306
+    SLICE_X37Y15.C3      net (fanout=1)        0.858   cpuall/ALUMAIN/Mmux_ALU_output305
+    SLICE_X37Y15.C       Tilo                  0.097   cpuall/RegFile/regmem_6<3>
+                                                       cpuall/ALUMAIN/Mmux_ALU_output307
+    SLICE_X35Y18.D5      net (fanout=2)        0.527   cpuall/ALU_Result<7>
+    SLICE_X35Y18.D       Tilo                  0.097   cpuall/ALUMAIN/zero3
+                                                       cpuall/ALUMAIN/zero4
+    SLICE_X38Y22.B1      net (fanout=8)        0.835   cpuall/ALUMAIN/zero3
+    SLICE_X38Y22.B       Tilo                  0.097   cpuall/InstrFetch/next_pc<6>
+                                                       cpuall/InstrFetch/nextpcMUX/Mmux_output52
+    SLICE_X39Y25.AX      net (fanout=2)        0.380   cpuall/InstrFetch/next_pc<6>
+    SLICE_X39Y25.CLK     Tdick                 0.026   cpuall/InstrFetch/PC/output<5>
+                                                       cpuall/InstrFetch/PC/output_6
+    -------------------------------------------------  ---------------------------
+    Total                                      9.821ns (2.206ns logic, 7.615ns route)
+                                                       (22.5% logic, 77.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.108ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cpuall/InstrFetch/PC/output_0 (FF)
+  Destination:          cpuall/InstrFetch/PC/output_6 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.817ns (Levels of Logic = 12)
+  Clock Path Skew:      -0.040ns (0.558 - 0.598)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cpuall/InstrFetch/PC/output_0 to cpuall/InstrFetch/PC/output_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y24.BQ      Tcko                  0.341   cpuall/InstrFetch/PC/output<3>
+                                                       cpuall/InstrFetch/PC/output_0
+    SLICE_X38Y23.D2      net (fanout=180)      0.808   cpuall/InstrFetch/PC/output<0>
+    SLICE_X38Y23.CMUX    Topdc                 0.397   N180
+                                                       cpuall/InstrFetch/InstrMem/Instruction<23>10_F
+                                                       cpuall/InstrFetch/InstrMem/Instruction<23>10
+    SLICE_X29Y19.A5      net (fanout=1)        0.971   cpuall/InstrFetch/InstrMem/Instruction<23>9
+    SLICE_X29Y19.A       Tilo                  0.097   cpuall/RegFile/mux9_9
+                                                       cpuall/InstrFetch/InstrMem/Instruction<23>12
+    SLICE_X27Y20.B4      net (fanout=66)       0.831   cpuall/instr<23>
+    SLICE_X27Y20.B       Tilo                  0.097   N232
+                                                       cpuall/RegFile/GND_49_o_rdreg1[4]_equal_1_o<4>1
+    SLICE_X29Y14.C3      net (fanout=58)       1.034   cpuall/RegFile/GND_49_o_rdreg1[4]_equal_1_o
+    SLICE_X29Y14.C       Tilo                  0.097   cpuall/RegFile/mux11_3
+                                                       cpuall/RegFile/Mmux_rddata1121
+    SLICE_X34Y12.D5      net (fanout=9)        0.571   cpuall/RegData1<1>
+    SLICE_X34Y12.D       Tilo                  0.097   cpuall/ALUMAIN/Sh2
+                                                       cpuall/ALUMAIN/Sh21
+    SLICE_X35Y15.B3      net (fanout=7)        1.151   cpuall/ALUMAIN/Sh2
+    SLICE_X35Y15.B       Tilo                  0.097   cpuall/RegFile/regmem_21<3>
+                                                       cpuall/ALUMAIN/Mmux_ALU_output153
+    SLICE_X35Y15.A4      net (fanout=1)        0.297   cpuall/ALUMAIN/Mmux_ALU_output152
+    SLICE_X35Y15.A       Tilo                  0.097   cpuall/RegFile/regmem_21<3>
+                                                       cpuall/ALUMAIN/Mmux_ALU_output155
+    SLICE_X35Y18.A5      net (fanout=2)        0.388   cpuall/ALUMAIN/Mmux_ALU_output154
+    SLICE_X35Y18.A       Tilo                  0.097   cpuall/ALUMAIN/zero3
+                                                       cpuall/ALUMAIN/Mmux_ALU_output147_SW0
+    SLICE_X39Y22.B6      net (fanout=1)        0.338   N229
+    SLICE_X39Y22.B       Tilo                  0.097   N270
+                                                       cpuall/ALUMAIN/Mmux_ALU_output137_SW0
+    SLICE_X39Y22.A4      net (fanout=1)        0.297   N243
+    SLICE_X39Y22.A       Tilo                  0.097   N270
+                                                       cpuall/ALUMAIN/zero7
+    SLICE_X37Y22.CX      net (fanout=8)        0.444   cpuall/ALUMAIN/zero6
+    SLICE_X37Y22.CMUX    Tcxc                  0.353   N271
+                                                       cpuall/ALUMAIN/zero8_SW13
+    SLICE_X38Y22.B6      net (fanout=1)        0.220   N271
+    SLICE_X38Y22.B       Tilo                  0.097   cpuall/InstrFetch/next_pc<6>
+                                                       cpuall/InstrFetch/nextpcMUX/Mmux_output52
+    SLICE_X39Y25.AX      net (fanout=2)        0.380   cpuall/InstrFetch/next_pc<6>
+    SLICE_X39Y25.CLK     Tdick                 0.026   cpuall/InstrFetch/PC/output<5>
+                                                       cpuall/InstrFetch/PC/output_6
+    -------------------------------------------------  ---------------------------
+    Total                                      9.817ns (2.087ns logic, 7.730ns route)
+                                                       (21.3% logic, 78.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point cpuall/InstrFetch/PC/output_1_1 (SLICE_X39Y23.BX), 5940946 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.071ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cpuall/InstrFetch/PC/output_6 (FF)
+  Destination:          cpuall/InstrFetch/PC/output_1_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.855ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.039ns (0.559 - 0.598)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cpuall/InstrFetch/PC/output_6 to cpuall/InstrFetch/PC/output_1_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y25.AMUX    Tshcko                0.431   cpuall/InstrFetch/PC/output<5>
+                                                       cpuall/InstrFetch/PC/output_6
+    SLICE_X35Y24.B5      net (fanout=173)      0.805   cpuall/InstrFetch/PC/output<6>
+    SLICE_X35Y24.B       Tilo                  0.097   cpuall/InstrFetch/InstrMem/Instruction<21>6
+                                                       cpuall/InstrFetch/InstrMem/Instruction<21>7
+    SLICE_X35Y24.A4      net (fanout=1)        0.297   cpuall/InstrFetch/InstrMem/Instruction<21>6
+    SLICE_X35Y24.A       Tilo                  0.097   cpuall/InstrFetch/InstrMem/Instruction<21>6
+                                                       cpuall/InstrFetch/InstrMem/Instruction<21>8
+    SLICE_X22Y18.B5      net (fanout=1)        0.684   cpuall/InstrFetch/InstrMem/Instruction<21>7
+    SLICE_X22Y18.B       Tilo                  0.097   cpuall/RegFile/regmem_24<12>
+                                                       cpuall/InstrFetch/InstrMem/Instruction<21>11
+    SLICE_X23Y22.A6      net (fanout=258)      0.750   cpuall/instr<21>
+    SLICE_X23Y22.A       Tilo                  0.097   cpuall/RegFile/mux19_7
+                                                       cpuall/RegFile/mux20_7
+    SLICE_X25Y19.B3      net (fanout=1)        0.577   cpuall/RegFile/mux20_7
+    SLICE_X25Y19.B       Tilo                  0.097   cpuall/RegFile/mux20_82
+                                                       cpuall/RegFile/mux20_3
+    SLICE_X25Y19.A4      net (fanout=1)        0.297   cpuall/RegFile/mux20_3
+    SLICE_X25Y19.A       Tilo                  0.097   cpuall/RegFile/mux20_82
+                                                       cpuall/RegFile/Mmux_rddata1211
+    SLICE_X33Y17.B3      net (fanout=13)       0.950   cpuall/RegData1<28>
+    SLICE_X33Y17.B       Tilo                  0.097   cpuall/ALUMAIN/Mmux_ALU_output176
+                                                       cpuall/ALUMAIN/Sh1241
+    SLICE_X36Y15.D5      net (fanout=6)        0.885   cpuall/ALUMAIN/Sh124
+    SLICE_X36Y15.CMUX    Topdc                 0.408   cpuall/RegFile/regmem_17<3>
+                                                       cpuall/ALUMAIN/Mmux_ALU_output43_F
+                                                       cpuall/ALUMAIN/Mmux_ALU_output43
+    SLICE_X36Y18.C5      net (fanout=1)        0.404   cpuall/ALUMAIN/Mmux_ALU_output42
+    SLICE_X36Y18.CMUX    Tilo                  0.415   cpuall/ALUMAIN/Mmux_ALU_output41
+                                                       cpuall/ALUMAIN/Mmux_ALU_output47_G
+                                                       cpuall/ALUMAIN/Mmux_ALU_output47
+    SLICE_X38Y21.A1      net (fanout=2)        0.887   cpuall/ALU_Result<12>
+    SLICE_X38Y21.A       Tilo                  0.097   cpuall/RegFile/regmem_28<19>
+                                                       cpuall/ALUMAIN/zero6
+    SLICE_X38Y22.A1      net (fanout=8)        0.718   cpuall/ALUMAIN/zero5
+    SLICE_X38Y22.A       Tilo                  0.097   cpuall/InstrFetch/next_pc<6>
+                                                       cpuall/InstrFetch/nextpcMUX/Mmux_output24
+    SLICE_X39Y23.BX      net (fanout=2)        0.425   cpuall/InstrFetch/next_pc<1>
+    SLICE_X39Y23.CLK     Tdick                 0.049   cpuall/InstrFetch/PC/output_1_1
+                                                       cpuall/InstrFetch/PC/output_1_1
+    -------------------------------------------------  ---------------------------
+    Total                                      9.855ns (2.176ns logic, 7.679ns route)
+                                                       (22.1% logic, 77.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.084ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cpuall/InstrFetch/PC/output_0 (FF)
+  Destination:          cpuall/InstrFetch/PC/output_1_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.860ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.021ns (0.098 - 0.119)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cpuall/InstrFetch/PC/output_0 to cpuall/InstrFetch/PC/output_1_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y24.BQ      Tcko                  0.341   cpuall/InstrFetch/PC/output<3>
+                                                       cpuall/InstrFetch/PC/output_0
+    SLICE_X38Y23.D2      net (fanout=180)      0.808   cpuall/InstrFetch/PC/output<0>
+    SLICE_X38Y23.CMUX    Topdc                 0.397   N180
+                                                       cpuall/InstrFetch/InstrMem/Instruction<23>10_F
+                                                       cpuall/InstrFetch/InstrMem/Instruction<23>10
+    SLICE_X29Y19.A5      net (fanout=1)        0.971   cpuall/InstrFetch/InstrMem/Instruction<23>9
+    SLICE_X29Y19.A       Tilo                  0.097   cpuall/RegFile/mux9_9
+                                                       cpuall/InstrFetch/InstrMem/Instruction<23>12
+    SLICE_X23Y14.A1      net (fanout=66)       1.580   cpuall/instr<23>
+    SLICE_X23Y14.A       Tilo                  0.097   cpuall/RegFile/regmem_0<8>
+                                                       cpuall/RegFile/mux2_4
+    SLICE_X27Y12.C5      net (fanout=3)        0.398   cpuall/RegFile/mux2_4
+    SLICE_X27Y12.C       Tilo                  0.097   cpuall/RegFile/mux2_3
+                                                       cpuall/RegFile/Mmux_rddata133
+    SLICE_X32Y12.D4      net (fanout=12)       0.712   cpuall/RegData1<11>
+    SLICE_X32Y12.D       Tilo                  0.097   cpuall/ALUMAIN/Sh12
+                                                       cpuall/ALUMAIN/Sh128
+    SLICE_X37Y13.B1      net (fanout=4)        0.720   cpuall/ALUMAIN/Sh12
+    SLICE_X37Y13.B       Tilo                  0.097   cpuall/RegFile/regmem_26<3>
+                                                       cpuall/ALUMAIN/Sh441
+    SLICE_X36Y18.B4      net (fanout=2)        0.563   cpuall/ALUMAIN/Sh44
+    SLICE_X36Y18.B       Tilo                  0.097   cpuall/ALUMAIN/Mmux_ALU_output41
+                                                       cpuall/ALUMAIN/Mmux_ALU_output42
+    SLICE_X36Y18.C6      net (fanout=1)        0.100   cpuall/ALUMAIN/Mmux_ALU_output41
+    SLICE_X36Y18.CMUX    Tilo                  0.415   cpuall/ALUMAIN/Mmux_ALU_output41
+                                                       cpuall/ALUMAIN/Mmux_ALU_output47_G
+                                                       cpuall/ALUMAIN/Mmux_ALU_output47
+    SLICE_X38Y21.A1      net (fanout=2)        0.887   cpuall/ALU_Result<12>
+    SLICE_X38Y21.A       Tilo                  0.097   cpuall/RegFile/regmem_28<19>
+                                                       cpuall/ALUMAIN/zero6
+    SLICE_X38Y22.A1      net (fanout=8)        0.718   cpuall/ALUMAIN/zero5
+    SLICE_X38Y22.A       Tilo                  0.097   cpuall/InstrFetch/next_pc<6>
+                                                       cpuall/InstrFetch/nextpcMUX/Mmux_output24
+    SLICE_X39Y23.BX      net (fanout=2)        0.425   cpuall/InstrFetch/next_pc<1>
+    SLICE_X39Y23.CLK     Tdick                 0.049   cpuall/InstrFetch/PC/output_1_1
+                                                       cpuall/InstrFetch/PC/output_1_1
+    -------------------------------------------------  ---------------------------
+    Total                                      9.860ns (1.978ns logic, 7.882ns route)
+                                                       (20.1% logic, 79.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.090ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cpuall/InstrFetch/PC/output_0 (FF)
+  Destination:          cpuall/InstrFetch/PC/output_1_1 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.854ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.021ns (0.098 - 0.119)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cpuall/InstrFetch/PC/output_0 to cpuall/InstrFetch/PC/output_1_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y24.BQ      Tcko                  0.341   cpuall/InstrFetch/PC/output<3>
+                                                       cpuall/InstrFetch/PC/output_0
+    SLICE_X38Y23.C2      net (fanout=180)      0.798   cpuall/InstrFetch/PC/output<0>
+    SLICE_X38Y23.CMUX    Tilo                  0.401   N180
+                                                       cpuall/InstrFetch/InstrMem/Instruction<23>10_G
+                                                       cpuall/InstrFetch/InstrMem/Instruction<23>10
+    SLICE_X29Y19.A5      net (fanout=1)        0.971   cpuall/InstrFetch/InstrMem/Instruction<23>9
+    SLICE_X29Y19.A       Tilo                  0.097   cpuall/RegFile/mux9_9
+                                                       cpuall/InstrFetch/InstrMem/Instruction<23>12
+    SLICE_X23Y14.A1      net (fanout=66)       1.580   cpuall/instr<23>
+    SLICE_X23Y14.A       Tilo                  0.097   cpuall/RegFile/regmem_0<8>
+                                                       cpuall/RegFile/mux2_4
+    SLICE_X27Y12.C5      net (fanout=3)        0.398   cpuall/RegFile/mux2_4
+    SLICE_X27Y12.C       Tilo                  0.097   cpuall/RegFile/mux2_3
+                                                       cpuall/RegFile/Mmux_rddata133
+    SLICE_X32Y12.D4      net (fanout=12)       0.712   cpuall/RegData1<11>
+    SLICE_X32Y12.D       Tilo                  0.097   cpuall/ALUMAIN/Sh12
+                                                       cpuall/ALUMAIN/Sh128
+    SLICE_X37Y13.B1      net (fanout=4)        0.720   cpuall/ALUMAIN/Sh12
+    SLICE_X37Y13.B       Tilo                  0.097   cpuall/RegFile/regmem_26<3>
+                                                       cpuall/ALUMAIN/Sh441
+    SLICE_X36Y18.B4      net (fanout=2)        0.563   cpuall/ALUMAIN/Sh44
+    SLICE_X36Y18.B       Tilo                  0.097   cpuall/ALUMAIN/Mmux_ALU_output41
+                                                       cpuall/ALUMAIN/Mmux_ALU_output42
+    SLICE_X36Y18.C6      net (fanout=1)        0.100   cpuall/ALUMAIN/Mmux_ALU_output41
+    SLICE_X36Y18.CMUX    Tilo                  0.415   cpuall/ALUMAIN/Mmux_ALU_output41
+                                                       cpuall/ALUMAIN/Mmux_ALU_output47_G
+                                                       cpuall/ALUMAIN/Mmux_ALU_output47
+    SLICE_X38Y21.A1      net (fanout=2)        0.887   cpuall/ALU_Result<12>
+    SLICE_X38Y21.A       Tilo                  0.097   cpuall/RegFile/regmem_28<19>
+                                                       cpuall/ALUMAIN/zero6
+    SLICE_X38Y22.A1      net (fanout=8)        0.718   cpuall/ALUMAIN/zero5
+    SLICE_X38Y22.A       Tilo                  0.097   cpuall/InstrFetch/next_pc<6>
+                                                       cpuall/InstrFetch/nextpcMUX/Mmux_output24
+    SLICE_X39Y23.BX      net (fanout=2)        0.425   cpuall/InstrFetch/next_pc<1>
+    SLICE_X39Y23.CLK     Tdick                 0.049   cpuall/InstrFetch/PC/output_1_1
+                                                       cpuall/InstrFetch/PC/output_1_1
+    -------------------------------------------------  ---------------------------
+    Total                                      9.854ns (1.982ns logic, 7.872ns route)
+                                                       (20.1% logic, 79.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point cpuall/RegFile/regmem_28_19 (SLICE_X38Y21.DX), 739759 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.104ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cpuall/InstrFetch/PC/output_6 (FF)
+  Destination:          cpuall/RegFile/regmem_28_19 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.824ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.037ns (0.561 - 0.598)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cpuall/InstrFetch/PC/output_6 to cpuall/RegFile/regmem_28_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y25.AMUX    Tshcko                0.431   cpuall/InstrFetch/PC/output<5>
+                                                       cpuall/InstrFetch/PC/output_6
+    SLICE_X35Y24.B5      net (fanout=173)      0.805   cpuall/InstrFetch/PC/output<6>
+    SLICE_X35Y24.B       Tilo                  0.097   cpuall/InstrFetch/InstrMem/Instruction<21>6
+                                                       cpuall/InstrFetch/InstrMem/Instruction<21>7
+    SLICE_X35Y24.A4      net (fanout=1)        0.297   cpuall/InstrFetch/InstrMem/Instruction<21>6
+    SLICE_X35Y24.A       Tilo                  0.097   cpuall/InstrFetch/InstrMem/Instruction<21>6
+                                                       cpuall/InstrFetch/InstrMem/Instruction<21>8
+    SLICE_X22Y18.B5      net (fanout=1)        0.684   cpuall/InstrFetch/InstrMem/Instruction<21>7
+    SLICE_X22Y18.B       Tilo                  0.097   cpuall/RegFile/regmem_24<12>
+                                                       cpuall/InstrFetch/InstrMem/Instruction<21>11
+    SLICE_X19Y19.D2      net (fanout=258)      1.016   cpuall/instr<21>
+    SLICE_X19Y19.D       Tilo                  0.097   cpuall/RegFile/regmem_30<14>
+                                                       cpuall/RegFile/mux12_82
+    SLICE_X19Y19.C6      net (fanout=1)        0.248   cpuall/RegFile/mux12_82
+    SLICE_X19Y19.C       Tilo                  0.097   cpuall/RegFile/regmem_30<14>
+                                                       cpuall/RegFile/mux12_4
+    SLICE_X27Y17.C6      net (fanout=1)        0.698   cpuall/RegFile/mux12_4
+    SLICE_X27Y17.C       Tilo                  0.097   cpuall/RegFile/mux12_3
+                                                       cpuall/RegFile/Mmux_rddata1131
+    SLICE_X31Y14.D4      net (fanout=15)       0.789   cpuall/RegData1<20>
+    SLICE_X31Y14.D       Tilo                  0.097   cpuall/RegFile/regmem_13<3>
+                                                       cpuall/ALUMAIN/Sh1151
+    SLICE_X31Y14.C1      net (fanout=3)        0.609   cpuall/ALUMAIN/Sh115
+    SLICE_X31Y14.C       Tilo                  0.097   cpuall/RegFile/regmem_13<3>
+                                                       cpuall/ALUMAIN/Sh14311
+    SLICE_X38Y17.D4      net (fanout=2)        1.242   cpuall/ALUMAIN/Sh1431
+    SLICE_X38Y17.D       Tilo                  0.097   cpuall/ALUMAIN/Mmux_ALU_output113
+                                                       cpuall/ALUMAIN/Mmux_ALU_output116
+    SLICE_X37Y18.C4      net (fanout=1)        0.422   cpuall/ALUMAIN/Mmux_ALU_output113
+    SLICE_X37Y18.C       Tilo                  0.097   cpuall/ALUMAIN/Mmux_ALU_output115
+                                                       cpuall/ALUMAIN/Mmux_ALU_output1110
+    SLICE_X42Y22.D3      net (fanout=2)        0.732   cpuall/ALU_Result<19>
+    SLICE_X42Y22.D       Tilo                  0.097   cpuall/RegFile/regmem_21<19>
+                                                       cpuall/Mmux_WriteData111
+    SLICE_X38Y21.DX      net (fanout=31)       0.777   cpuall/WriteData<19>
+    SLICE_X38Y21.CLK     Tdick                 0.007   cpuall/RegFile/regmem_28<19>
+                                                       cpuall/RegFile/regmem_28_19
+    -------------------------------------------------  ---------------------------
+    Total                                      9.824ns (1.505ns logic, 8.319ns route)
+                                                       (15.3% logic, 84.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.142ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cpuall/InstrFetch/PC/output_6 (FF)
+  Destination:          cpuall/RegFile/regmem_28_19 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.786ns (Levels of Logic = 10)
+  Clock Path Skew:      -0.037ns (0.561 - 0.598)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cpuall/InstrFetch/PC/output_6 to cpuall/RegFile/regmem_28_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y25.AMUX    Tshcko                0.431   cpuall/InstrFetch/PC/output<5>
+                                                       cpuall/InstrFetch/PC/output_6
+    SLICE_X36Y25.A1      net (fanout=173)      0.919   cpuall/InstrFetch/PC/output<6>
+    SLICE_X36Y25.A       Tilo                  0.097   cpuall/InstrFetch/InstrMem/Instruction<21>5
+                                                       cpuall/InstrFetch/InstrMem/Instruction<21>6
+    SLICE_X22Y18.B4      net (fanout=1)        0.926   cpuall/InstrFetch/InstrMem/Instruction<21>5
+    SLICE_X22Y18.B       Tilo                  0.097   cpuall/RegFile/regmem_24<12>
+                                                       cpuall/InstrFetch/InstrMem/Instruction<21>11
+    SLICE_X19Y19.D2      net (fanout=258)      1.016   cpuall/instr<21>
+    SLICE_X19Y19.D       Tilo                  0.097   cpuall/RegFile/regmem_30<14>
+                                                       cpuall/RegFile/mux12_82
+    SLICE_X19Y19.C6      net (fanout=1)        0.248   cpuall/RegFile/mux12_82
+    SLICE_X19Y19.C       Tilo                  0.097   cpuall/RegFile/regmem_30<14>
+                                                       cpuall/RegFile/mux12_4
+    SLICE_X27Y17.C6      net (fanout=1)        0.698   cpuall/RegFile/mux12_4
+    SLICE_X27Y17.C       Tilo                  0.097   cpuall/RegFile/mux12_3
+                                                       cpuall/RegFile/Mmux_rddata1131
+    SLICE_X31Y14.D4      net (fanout=15)       0.789   cpuall/RegData1<20>
+    SLICE_X31Y14.D       Tilo                  0.097   cpuall/RegFile/regmem_13<3>
+                                                       cpuall/ALUMAIN/Sh1151
+    SLICE_X31Y14.C1      net (fanout=3)        0.609   cpuall/ALUMAIN/Sh115
+    SLICE_X31Y14.C       Tilo                  0.097   cpuall/RegFile/regmem_13<3>
+                                                       cpuall/ALUMAIN/Sh14311
+    SLICE_X38Y17.D4      net (fanout=2)        1.242   cpuall/ALUMAIN/Sh1431
+    SLICE_X38Y17.D       Tilo                  0.097   cpuall/ALUMAIN/Mmux_ALU_output113
+                                                       cpuall/ALUMAIN/Mmux_ALU_output116
+    SLICE_X37Y18.C4      net (fanout=1)        0.422   cpuall/ALUMAIN/Mmux_ALU_output113
+    SLICE_X37Y18.C       Tilo                  0.097   cpuall/ALUMAIN/Mmux_ALU_output115
+                                                       cpuall/ALUMAIN/Mmux_ALU_output1110
+    SLICE_X42Y22.D3      net (fanout=2)        0.732   cpuall/ALU_Result<19>
+    SLICE_X42Y22.D       Tilo                  0.097   cpuall/RegFile/regmem_21<19>
+                                                       cpuall/Mmux_WriteData111
+    SLICE_X38Y21.DX      net (fanout=31)       0.777   cpuall/WriteData<19>
+    SLICE_X38Y21.CLK     Tdick                 0.007   cpuall/RegFile/regmem_28<19>
+                                                       cpuall/RegFile/regmem_28_19
+    -------------------------------------------------  ---------------------------
+    Total                                      9.786ns (1.408ns logic, 8.378ns route)
+                                                       (14.4% logic, 85.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.177ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cpuall/InstrFetch/PC/output_6 (FF)
+  Destination:          cpuall/RegFile/regmem_28_19 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.751ns (Levels of Logic = 11)
+  Clock Path Skew:      -0.037ns (0.561 - 0.598)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cpuall/InstrFetch/PC/output_6 to cpuall/RegFile/regmem_28_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X39Y25.AMUX    Tshcko                0.431   cpuall/InstrFetch/PC/output<5>
+                                                       cpuall/InstrFetch/PC/output_6
+    SLICE_X35Y24.B5      net (fanout=173)      0.805   cpuall/InstrFetch/PC/output<6>
+    SLICE_X35Y24.B       Tilo                  0.097   cpuall/InstrFetch/InstrMem/Instruction<21>6
+                                                       cpuall/InstrFetch/InstrMem/Instruction<21>7
+    SLICE_X35Y24.A4      net (fanout=1)        0.297   cpuall/InstrFetch/InstrMem/Instruction<21>6
+    SLICE_X35Y24.A       Tilo                  0.097   cpuall/InstrFetch/InstrMem/Instruction<21>6
+                                                       cpuall/InstrFetch/InstrMem/Instruction<21>8
+    SLICE_X22Y18.B5      net (fanout=1)        0.684   cpuall/InstrFetch/InstrMem/Instruction<21>7
+    SLICE_X22Y18.B       Tilo                  0.097   cpuall/RegFile/regmem_24<12>
+                                                       cpuall/InstrFetch/InstrMem/Instruction<21>11
+    SLICE_X18Y19.B6      net (fanout=258)      0.747   cpuall/instr<21>
+    SLICE_X18Y19.B       Tilo                  0.097   cpuall/RegFile/regmem_6<14>
+                                                       cpuall/RegFile/mux12_92
+    SLICE_X19Y19.C3      net (fanout=1)        0.444   cpuall/RegFile/mux12_92
+    SLICE_X19Y19.C       Tilo                  0.097   cpuall/RegFile/regmem_30<14>
+                                                       cpuall/RegFile/mux12_4
+    SLICE_X27Y17.C6      net (fanout=1)        0.698   cpuall/RegFile/mux12_4
+    SLICE_X27Y17.C       Tilo                  0.097   cpuall/RegFile/mux12_3
+                                                       cpuall/RegFile/Mmux_rddata1131
+    SLICE_X31Y14.D4      net (fanout=15)       0.789   cpuall/RegData1<20>
+    SLICE_X31Y14.D       Tilo                  0.097   cpuall/RegFile/regmem_13<3>
+                                                       cpuall/ALUMAIN/Sh1151
+    SLICE_X31Y14.C1      net (fanout=3)        0.609   cpuall/ALUMAIN/Sh115
+    SLICE_X31Y14.C       Tilo                  0.097   cpuall/RegFile/regmem_13<3>
+                                                       cpuall/ALUMAIN/Sh14311
+    SLICE_X38Y17.D4      net (fanout=2)        1.242   cpuall/ALUMAIN/Sh1431
+    SLICE_X38Y17.D       Tilo                  0.097   cpuall/ALUMAIN/Mmux_ALU_output113
+                                                       cpuall/ALUMAIN/Mmux_ALU_output116
+    SLICE_X37Y18.C4      net (fanout=1)        0.422   cpuall/ALUMAIN/Mmux_ALU_output113
+    SLICE_X37Y18.C       Tilo                  0.097   cpuall/ALUMAIN/Mmux_ALU_output115
+                                                       cpuall/ALUMAIN/Mmux_ALU_output1110
+    SLICE_X42Y22.D3      net (fanout=2)        0.732   cpuall/ALU_Result<19>
+    SLICE_X42Y22.D       Tilo                  0.097   cpuall/RegFile/regmem_21<19>
+                                                       cpuall/Mmux_WriteData111
+    SLICE_X38Y21.DX      net (fanout=31)       0.777   cpuall/WriteData<19>
+    SLICE_X38Y21.CLK     Tdick                 0.007   cpuall/RegFile/regmem_28<19>
+                                                       cpuall/RegFile/regmem_28_19
+    -------------------------------------------------  ---------------------------
+    Total                                      9.751ns (1.505ns logic, 8.246ns route)
+                                                       (15.4% logic, 84.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point an_sig_4 (SLICE_X8Y47.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.227ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               an_sig_3 (FF)
+  Destination:          an_sig_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.240ns (Levels of Logic = 0)
+  Clock Path Skew:      0.013ns (0.071 - 0.058)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: an_sig_3 to an_sig_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X9Y47.DQ       Tcko                  0.141   an_sig<3>
+                                                       an_sig_3
+    SLICE_X8Y47.AX       net (fanout=42)       0.158   an_sig<3>
+    SLICE_X8Y47.CLK      Tckdi       (-Th)     0.059   an_sig<7>
+                                                       an_sig_4
+    -------------------------------------------------  ---------------------------
+    Total                                      0.240ns (0.082ns logic, 0.158ns route)
+                                                       (34.2% logic, 65.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point an_sig_0 (SLICE_X9Y47.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.264ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               an_sig_7 (FF)
+  Destination:          an_sig_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.277ns (Levels of Logic = 0)
+  Clock Path Skew:      0.013ns (0.071 - 0.058)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: an_sig_7 to an_sig_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y47.DQ       Tcko                  0.164   an_sig<7>
+                                                       an_sig_7
+    SLICE_X9Y47.AX       net (fanout=41)       0.183   an_sig<7>
+    SLICE_X9Y47.CLK      Tckdi       (-Th)     0.070   an_sig<3>
+                                                       an_sig_0
+    -------------------------------------------------  ---------------------------
+    Total                                      0.277ns (0.094ns logic, 0.183ns route)
+                                                       (33.9% logic, 66.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point clk_de (SLICE_X32Y79.A3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.268ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               clk_de (FF)
+  Destination:          clk_de (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.268ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: clk_de to clk_de
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y79.AQ      Tcko                  0.141   clk_de
+                                                       clk_de
+    SLICE_X32Y79.A3      net (fanout=2)        0.173   clk_de
+    SLICE_X32Y79.CLK     Tah         (-Th)     0.046   clk_de
+                                                       clk_de_INV_47_o1_INV_0
+                                                       clk_de
+    -------------------------------------------------  ---------------------------
+    Total                                      0.268ns (0.095ns logic, 0.173ns route)
+                                                       (35.4% logic, 64.6% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 7.900ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 1.050ns (Tmpw)
+  Physical resource: cpuall/DmemOut<31>/CLK
+  Logical resource: cpuall/DMem/Mram_datamem11/CLK
+  Location pin: SLICE_X34Y17.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 7.900ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 1.050ns (Tmpw)
+  Physical resource: cpuall/DmemOut<31>/CLK
+  Logical resource: cpuall/DMem/Mram_datamem11/CLK
+  Location pin: SLICE_X34Y17.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 7.900ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 1.050ns (Tmpw)
+  Physical resource: cpuall/DmemOut<31>/CLK
+  Logical resource: cpuall/DMem/Mram_datamem9/CLK
+  Location pin: SLICE_X34Y17.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    9.933|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 827799396 paths, 0 nets, and 12154 connections
+
+Design statistics:
+   Minimum period:   9.933ns{1}   (Maximum frequency: 100.675MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Dec 12 15:04:16 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 434 MB
+
+
+

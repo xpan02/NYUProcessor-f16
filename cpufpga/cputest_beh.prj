@@ -1,0 +1,3 @@
+vhdl work "cputest.vhd"
+vhdl work "cpufpga.vhd"
+vhdl work "cpu.vhd"

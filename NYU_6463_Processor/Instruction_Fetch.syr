@@ -1,0 +1,468 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Instruction_Fetch.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Instruction_Fetch.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Instruction_Fetch"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : Instruction_Fetch
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\shift_left.vhd" into library work
+Parsing entity <shift_left>.
+Parsing architecture <Behavioral> of entity <shift_left>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\Program_Counter.vhd" into library work
+Parsing entity <Program_Counter>.
+Parsing architecture <Behavioral> of entity <program_counter>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\MUX.vhd" into library work
+Parsing entity <MUX>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\InstructionMemory.vhd" into library work
+Parsing entity <InstructionMemory>.
+Parsing architecture <Behavioral> of entity <instructionmemory>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\ADDER.vhd" into library work
+Parsing entity <ADDER>.
+Parsing architecture <Behavioral> of entity <adder>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\Instruction_Fetch.vhd" into library work
+Parsing entity <Instruction_Fetch>.
+Parsing architecture <Behavioral> of entity <instruction_fetch>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Instruction_Fetch> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Program_Counter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <InstructionMemory> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ADDER> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <shift_left> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Instruction_Fetch>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\Instruction_Fetch.vhd".
+    Summary:
+	no macro.
+Unit <Instruction_Fetch> synthesized.
+
+Synthesizing Unit <Program_Counter>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\Program_Counter.vhd".
+WARNING:Xst:647 - Input <input> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    WARNING:Xst:2404 -  FFs/Latches <output<1:32>> (without init value) have a constant value of 0 in block <Program_Counter>.
+    Summary:
+	no macro.
+Unit <Program_Counter> synthesized.
+
+Synthesizing Unit <InstructionMemory>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\InstructionMemory.vhd".
+WARNING:Xst:2999 - Signal 'imem', unconnected in block 'InstructionMemory', is tied to its initial value.
+    Found 32-bit adder for signal <n0014> created at line 52.
+    Found 32-bit adder for signal <n0015> created at line 53.
+    Found 32-bit adder for signal <n0016> created at line 54.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <imem>, simulation mismatch.
+    Found 257x8-bit dual-port Read Only RAM <Mram_imem> for signal <imem>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <InstructionMemory> synthesized.
+
+Synthesizing Unit <ADDER>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\ADDER.vhd".
+    Found 32-bit adder for signal <output> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADDER> synthesized.
+
+Synthesizing Unit <shift_left>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\shift_left.vhd".
+WARNING:Xst:647 - Input <input<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <shift_left> synthesized.
+
+Synthesizing Unit <MUX>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\MUX.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 257x8-bit dual-port Read Only RAM                     : 2
+# Adders/Subtractors                                   : 5
+ 32-bit adder                                          : 5
+# Multiplexers                                         : 2
+ 32-bit 2-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <branchimm> is unconnected in block <Instruction_Fetch>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <JumpMUX> is unconnected in block <Instruction_Fetch>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <BranchMUX> is unconnected in block <Instruction_Fetch>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Branch_Adder> is unconnected in block <Instruction_Fetch>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <PC_Adder> is unconnected in block <Instruction_Fetch>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Shift_Jump> is unconnected in block <Instruction_Fetch>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <InstructionMemory>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_imem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 257-word x 8-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Instruction1>  |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 257-word x 8-bit                    |          |
+    |     addrB          | connected to signal <n0014>         |          |
+    |     doB            | connected to signal <Instruction2>  |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_imem1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 257-word x 8-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0015>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Instruction3>  |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 257-word x 8-bit                    |          |
+    |     addrB          | connected to signal <n0016>         |          |
+    |     doB            | connected to signal <Instruction4>  |          |
+    -----------------------------------------------------------------------
+Unit <InstructionMemory> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 257x8-bit dual-port distributed Read Only RAM         : 2
+# Adders/Subtractors                                   : 5
+ 32-bit adder                                          : 2
+ 9-bit adder                                           : 3
+# Multiplexers                                         : 2
+ 32-bit 2-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem12> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem14> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem18> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem16> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem110> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem112> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem114> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem118> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem116> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem117> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem119> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem120> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem123> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem121> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem122> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem124> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem2> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem4> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem8> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem6> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem10> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem21> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem23> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem27> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem25> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem26> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem28> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem29> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem32> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem30> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem31> of sequential type is unconnected in block <MTP_>.
+WARNING:Xst:2677 - Node <InstrMem/Mram_imem33> of sequential type is unconnected in block <MTP_>.
+
+Optimizing unit <Instruction_Fetch> ...
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem11>, <InstrMem/Mram_imem15> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem11>, <InstrMem/Mram_imem13> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem11>, <InstrMem/Mram_imem17> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem11>, <InstrMem/Mram_imem19> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem11>, <InstrMem/Mram_imem113> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem11>, <InstrMem/Mram_imem111> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem11>, <InstrMem/Mram_imem115> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem125>, <InstrMem/Mram_imem5> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem125>, <InstrMem/Mram_imem3> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem125>, <InstrMem/Mram_imem7> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem125>, <InstrMem/Mram_imem9> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem125>, <InstrMem/Mram_imem22> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem125>, <InstrMem/Mram_imem20> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <InstrMem/Mram_imem125>, <InstrMem/Mram_imem24> are equivalent, second RAM is removed
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Instruction_Fetch, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Instruction_Fetch.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# RAMS                             : 2
+#      RAM128X1D                   : 2
+# IO Buffers                       : 32
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                    8  out of  63400     0%  
+    Number used as Memory:                8  out of  19000     0%  
+       Number used as RAM:                8
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      8
+   Number with an unused Flip Flop:       8  out of      8   100%  
+   Number with an unused LUT:             0  out of      8     0%  
+   Number of fully used LUT-FF pairs:     0  out of      8     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          68
+ Number of bonded IOBs:                  32  out of    210    15%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)      | Load  |
+-----------------------------------+----------------------------+-------+
+N0                                 | NONE(InstrMem/Mram_imem125)| 2     |
+-----------------------------------+----------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 1.815ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'N0'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              1.815ns (Levels of Logic = 1)
+  Source:            InstrMem/Mram_imem125 (RAM)
+  Destination:       instr<31> (PAD)
+  Source Clock:      N0 rising
+
+  Data Path: InstrMem/Mram_imem125 to instr<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM128X1D:WCLK->SPO    8   1.504   0.311  InstrMem/Mram_imem125 (instr_24_OBUF)
+     OBUF:I->O                 0.000          instr_24_OBUF (instr<24>)
+    ----------------------------------------
+    Total                      1.815ns (1.504ns logic, 0.311ns route)
+                                       (82.8% logic, 17.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.00 secs
+ 
+--> 
+
+Total memory usage is 365160 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   44 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

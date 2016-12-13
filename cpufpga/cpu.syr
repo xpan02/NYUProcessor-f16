@@ -1,0 +1,831 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: cpu.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cpu.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cpu"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : cpu
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\Program_Counter.vhd" into library work
+Parsing entity <Program_Counter>.
+Parsing architecture <Behavioral> of entity <program_counter>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\MUX.vhd" into library work
+Parsing entity <MUX>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\InstructionMemory.vhd" into library work
+Parsing entity <InstructionMemory>.
+Parsing architecture <Behavioral> of entity <instructionmemory>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\ADDER.vhd" into library work
+Parsing entity <ADDER>.
+Parsing architecture <Behavioral> of entity <adder>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\RegisterFile.vhd" into library work
+Parsing entity <RegisterFile>.
+Parsing architecture <Behavioral> of entity <registerfile>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\Instruction_Fetch.vhd" into library work
+Parsing entity <Instruction_Fetch>.
+Parsing architecture <Behavioral> of entity <instruction_fetch>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\DataMemory.vhd" into library work
+Parsing entity <DataMemory>.
+Parsing architecture <Behavioral> of entity <datamemory>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\control_unit.vhd" into library work
+Parsing entity <control_unit>.
+Parsing architecture <Behavioral> of entity <control_unit>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "C:\NYU VHDL\NYU_6463_Processor\cpu.vhd" into library work
+Parsing entity <cpu>.
+Parsing architecture <Behavioral> of entity <cpu>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <cpu> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DataMemory> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Instruction_Fetch> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\NYU VHDL\NYU_6463_Processor\Instruction_Fetch.vhd" Line 94: Assignment to jumpimm ignored, since the identifier is never used
+
+Elaborating entity <Program_Counter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <InstructionMemory> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "C:\NYU VHDL\NYU_6463_Processor\InstructionMemory.vhd" Line 57: Net <imem[0][31]> does not have a driver.
+
+Elaborating entity <ADDER> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <control_unit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RegisterFile> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <cpu>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\cpu.vhd".
+INFO:Xst:3210 - "C:\NYU VHDL\NYU_6463_Processor\cpu.vhd" line 166: Output port <PCSrc> of the instance <CtrlUn> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\NYU VHDL\NYU_6463_Processor\cpu.vhd" line 166: Output port <shiftl> of the instance <CtrlUn> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\NYU VHDL\NYU_6463_Processor\cpu.vhd" line 166: Output port <shiftr> of the instance <CtrlUn> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <cpu> synthesized.
+
+Synthesizing Unit <DataMemory>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\DataMemory.vhd".
+WARNING:Xst:647 - Input <address<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rdmemen> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32x32-bit single-port RAM <Mram_datamem> for signal <datamem>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <DataMemory> synthesized.
+
+Synthesizing Unit <Instruction_Fetch>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\Instruction_Fetch.vhd".
+    Summary:
+	no macro.
+Unit <Instruction_Fetch> synthesized.
+
+Synthesizing Unit <Program_Counter>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\Program_Counter.vhd".
+    Found 32-bit register for signal <output>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <Program_Counter> synthesized.
+
+Synthesizing Unit <InstructionMemory>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\InstructionMemory.vhd".
+WARNING:Xst:647 - Input <address<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2935 - Signal 'imem<0>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000000100000010000).
+WARNING:Xst:2935 - Signal 'imem<1>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000001000000010000).
+WARNING:Xst:2935 - Signal 'imem<2>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000001100000010000).
+WARNING:Xst:2935 - Signal 'imem<4>', unconnected in block 'InstructionMemory', is tied to its initial value (00010111110111100000000000010000).
+WARNING:Xst:2935 - Signal 'imem<6>', unconnected in block 'InstructionMemory', is tied to its initial value (00000011110111011111000000010000).
+WARNING:Xst:2935 - Signal 'imem<7>', unconnected in block 'InstructionMemory', is tied to its initial value (00100000000111100000000000011010).
+WARNING:Xst:2935 - Signal 'imem<9>', unconnected in block 'InstructionMemory', is tied to its initial value (00010111110111100000000000010000).
+WARNING:Xst:2935 - Signal 'imem<11>', unconnected in block 'InstructionMemory', is tied to its initial value (00000011110111011111000000010000).
+WARNING:Xst:2935 - Signal 'imem<12>', unconnected in block 'InstructionMemory', is tied to its initial value (00100000000111100000000000011011).
+WARNING:Xst:2935 - Signal 'imem<14>', unconnected in block 'InstructionMemory', is tied to its initial value (00010111110111100000000000010000).
+WARNING:Xst:2935 - Signal 'imem<16>', unconnected in block 'InstructionMemory', is tied to its initial value (00000011110111011111000000010000).
+WARNING:Xst:2935 - Signal 'imem<17>', unconnected in block 'InstructionMemory', is tied to its initial value (00100000000111100000000000011100).
+WARNING:Xst:2935 - Signal 'imem<19>', unconnected in block 'InstructionMemory', is tied to its initial value (00010111110111100000000000010000).
+WARNING:Xst:2935 - Signal 'imem<21>', unconnected in block 'InstructionMemory', is tied to its initial value (00000011110111011111000000010000).
+WARNING:Xst:2935 - Signal 'imem<22>', unconnected in block 'InstructionMemory', is tied to its initial value (00100000000111100000000000011101).
+WARNING:Xst:2935 - Signal 'imem<23>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100000101010000000000000100).
+WARNING:Xst:2935 - Signal 'imem<24>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100000101100000000000011010).
+WARNING:Xst:2935 - Signal 'imem<25>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100000101110000000001001110).
+WARNING:Xst:2935 - Signal 'imem<26>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000010000000010000).
+WARNING:Xst:2935 - Signal 'imem<27>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000010100000010000).
+WARNING:Xst:2935 - Signal 'imem<28>', unconnected in block 'InstructionMemory', is tied to its initial value (00011100010010000000000000000000).
+WARNING:Xst:2935 - Signal 'imem<29>', unconnected in block 'InstructionMemory', is tied to its initial value (00011100001010010000000000011010).
+WARNING:Xst:2935 - Signal 'imem<30>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100001010011000000010000).
+WARNING:Xst:2935 - Signal 'imem<31>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001000001100101000000010000).
+WARNING:Xst:2935 - Signal 'imem<32>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100000010110000000000000011).
+WARNING:Xst:2935 - Signal 'imem<33>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000110000000010000).
+WARNING:Xst:2935 - Signal 'imem<34>', unconnected in block 'InstructionMemory', is tied to its initial value (00101001011011000000000000000101).
+WARNING:Xst:2935 - Signal 'imem<35>', unconnected in block 'InstructionMemory', is tied to its initial value (00010101010011010000000000000001).
+WARNING:Xst:2935 - Signal 'imem<36>', unconnected in block 'InstructionMemory', is tied to its initial value (00011001010011100000000000011111).
+WARNING:Xst:2935 - Signal 'imem<37>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001101011100101000000010000).
+WARNING:Xst:2935 - Signal 'imem<38>', unconnected in block 'InstructionMemory', is tied to its initial value (00000101100011000000000000000001).
+WARNING:Xst:2935 - Signal 'imem<39>', unconnected in block 'InstructionMemory', is tied to its initial value (00110000000000000000000000100010).
+WARNING:Xst:2935 - Signal 'imem<40>', unconnected in block 'InstructionMemory', is tied to its initial value (00100000010010100000000000000000).
+WARNING:Xst:2935 - Signal 'imem<41>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000010100010000000010000).
+WARNING:Xst:2935 - Signal 'imem<42>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100001010011000000010000).
+WARNING:Xst:2935 - Signal 'imem<43>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001001001100101000000010000).
+WARNING:Xst:2935 - Signal 'imem<44>', unconnected in block 'InstructionMemory', is tied to its initial value (00001100110010110000000000011111).
+WARNING:Xst:2935 - Signal 'imem<45>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000110000000010000).
+WARNING:Xst:2935 - Signal 'imem<46>', unconnected in block 'InstructionMemory', is tied to its initial value (00101001011011000000000000000101).
+WARNING:Xst:2935 - Signal 'imem<47>', unconnected in block 'InstructionMemory', is tied to its initial value (00010101010011010000000000000001).
+WARNING:Xst:2935 - Signal 'imem<48>', unconnected in block 'InstructionMemory', is tied to its initial value (00011001010011100000000000011111).
+WARNING:Xst:2935 - Signal 'imem<49>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001101011100101000000010000).
+WARNING:Xst:2935 - Signal 'imem<50>', unconnected in block 'InstructionMemory', is tied to its initial value (00000101100011000000000000000001).
+WARNING:Xst:2935 - Signal 'imem<51>', unconnected in block 'InstructionMemory', is tied to its initial value (00110000000000000000000000101110).
+WARNING:Xst:2935 - Signal 'imem<52>', unconnected in block 'InstructionMemory', is tied to its initial value (00100000001010100000000000011010).
+WARNING:Xst:2935 - Signal 'imem<53>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000010100010100000010000).
+WARNING:Xst:2935 - Signal 'imem<54>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100001000010000000000000001).
+WARNING:Xst:2935 - Signal 'imem<55>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100010000100000000000000001).
+WARNING:Xst:2935 - Signal 'imem<56>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100011000110000000000000001).
+WARNING:Xst:2935 - Signal 'imem<57>', unconnected in block 'InstructionMemory', is tied to its initial value (00101100001101010000000000000001).
+WARNING:Xst:2935 - Signal 'imem<58>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000000100000010000).
+WARNING:Xst:2935 - Signal 'imem<59>', unconnected in block 'InstructionMemory', is tied to its initial value (00101100010101100000000000000001).
+WARNING:Xst:2935 - Signal 'imem<60>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000001000000010000).
+WARNING:Xst:2935 - Signal 'imem<61>', unconnected in block 'InstructionMemory', is tied to its initial value (00101000011101110000000000000001).
+WARNING:Xst:2935 - Signal 'imem<62>', unconnected in block 'InstructionMemory', is tied to its initial value (00110000000000000000000000011100).
+WARNING:Xst:2935 - Signal 'imem<63>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000001100000010000).
+WARNING:Xst:2935 - Signal 'imem<64>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100000111100000000000011010).
+WARNING:Xst:2935 - Signal 'imem<65>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000010000000010000).
+WARNING:Xst:2935 - Signal 'imem<66>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000010100000010000).
+WARNING:Xst:2935 - Signal 'imem<68>', unconnected in block 'InstructionMemory', is tied to its initial value (00010100100001000000000000010000).
+WARNING:Xst:2935 - Signal 'imem<70>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100111010010000000010000).
+WARNING:Xst:2935 - Signal 'imem<72>', unconnected in block 'InstructionMemory', is tied to its initial value (00010100101001010000000000010000).
+WARNING:Xst:2935 - Signal 'imem<74>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000101111010010100000010000).
+WARNING:Xst:2935 - Signal 'imem<75>', unconnected in block 'InstructionMemory', is tied to its initial value (00011100011111110000000000000000).
+WARNING:Xst:2935 - Signal 'imem<76>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100111110010000000010000).
+WARNING:Xst:2935 - Signal 'imem<77>', unconnected in block 'InstructionMemory', is tied to its initial value (00011100011111110000000000000001).
+WARNING:Xst:2935 - Signal 'imem<78>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000101111110010100000010000).
+WARNING:Xst:2935 - Signal 'imem<79>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100011000110000000000000010).
+WARNING:Xst:2935 - Signal 'imem<80>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100000000011000000010100).
+WARNING:Xst:2935 - Signal 'imem<81>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000101000000011100000010100).
+WARNING:Xst:2935 - Signal 'imem<82>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100001110011100000010010).
+WARNING:Xst:2935 - Signal 'imem<83>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000101001100011000000010010).
+WARNING:Xst:2935 - Signal 'imem<84>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000110001110100000000010000).
+WARNING:Xst:2935 - Signal 'imem<85>', unconnected in block 'InstructionMemory', is tied to its initial value (00001100101001110000000000011111).
+WARNING:Xst:2935 - Signal 'imem<86>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000011000000010000).
+WARNING:Xst:2935 - Signal 'imem<87>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000010000100100000010000).
+WARNING:Xst:2935 - Signal 'imem<88>', unconnected in block 'InstructionMemory', is tied to its initial value (00101000110001110000000000000101).
+WARNING:Xst:2935 - Signal 'imem<89>', unconnected in block 'InstructionMemory', is tied to its initial value (00010101001010100000000000000001).
+WARNING:Xst:2935 - Signal 'imem<90>', unconnected in block 'InstructionMemory', is tied to its initial value (00011001001010110000000000011111).
+WARNING:Xst:2935 - Signal 'imem<91>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001010010110100100000010000).
+WARNING:Xst:2935 - Signal 'imem<92>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100110001100000000000000001).
+WARNING:Xst:2935 - Signal 'imem<93>', unconnected in block 'InstructionMemory', is tied to its initial value (00110000000000000000000001011000).
+WARNING:Xst:2935 - Signal 'imem<94>', unconnected in block 'InstructionMemory', is tied to its initial value (00011100011111110000000000000000).
+WARNING:Xst:2935 - Signal 'imem<95>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001001111110010000000010000).
+WARNING:Xst:2935 - Signal 'imem<96>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100000000011000000010100).
+WARNING:Xst:2935 - Signal 'imem<97>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000101000000011100000010100).
+WARNING:Xst:2935 - Signal 'imem<98>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100001110011100000010010).
+WARNING:Xst:2935 - Signal 'imem<99>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000101001100011000000010010).
+WARNING:Xst:2935 - Signal 'imem<100>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000110001110110000000010000).
+WARNING:Xst:2935 - Signal 'imem<101>', unconnected in block 'InstructionMemory', is tied to its initial value (00001100100001110000000000011111).
+WARNING:Xst:2935 - Signal 'imem<102>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000011000000010000).
+WARNING:Xst:2935 - Signal 'imem<103>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000011000110100000010000).
+WARNING:Xst:2935 - Signal 'imem<104>', unconnected in block 'InstructionMemory', is tied to its initial value (00101000110001110000000000000101).
+WARNING:Xst:2935 - Signal 'imem<105>', unconnected in block 'InstructionMemory', is tied to its initial value (00010101101010100000000000000001).
+WARNING:Xst:2935 - Signal 'imem<106>', unconnected in block 'InstructionMemory', is tied to its initial value (00011001101010110000000000011111).
+WARNING:Xst:2935 - Signal 'imem<107>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001010010110110100000010000).
+WARNING:Xst:2935 - Signal 'imem<108>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100110001100000000000000001).
+WARNING:Xst:2935 - Signal 'imem<109>', unconnected in block 'InstructionMemory', is tied to its initial value (00110000000000000000000001101000).
+WARNING:Xst:2935 - Signal 'imem<110>', unconnected in block 'InstructionMemory', is tied to its initial value (00011100011111110000000000000001).
+WARNING:Xst:2935 - Signal 'imem<111>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001101111110010100000010000).
+WARNING:Xst:2935 - Signal 'imem<112>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100011000110000000000000010).
+WARNING:Xst:2935 - Signal 'imem<113>', unconnected in block 'InstructionMemory', is tied to its initial value (00101000011111100000000000000001).
+WARNING:Xst:2935 - Signal 'imem<114>', unconnected in block 'InstructionMemory', is tied to its initial value (00110000000000000000000001010000).
+WARNING:Xst:2935 - Signal 'imem<115>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000001000100000010000).
+WARNING:Xst:2935 - Signal 'imem<116>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000001001000000010000).
+WARNING:Xst:2935 - Signal 'imem<117>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000001001000100000010000).
+WARNING:Xst:2935 - Signal 'imem<118>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000001011001000000010000).
+WARNING:Xst:2935 - Signal 'imem<119>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000010000000010000).
+WARNING:Xst:2935 - Signal 'imem<120>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000010100000010000).
+WARNING:Xst:2935 - Signal 'imem<122>', unconnected in block 'InstructionMemory', is tied to its initial value (00010100100001000000000000010000).
+WARNING:Xst:2935 - Signal 'imem<124>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100111010010000000010000).
+WARNING:Xst:2935 - Signal 'imem<126>', unconnected in block 'InstructionMemory', is tied to its initial value (00010100101001010000000000010000).
+WARNING:Xst:2935 - Signal 'imem<128>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000101111010010100000010000).
+WARNING:Xst:2935 - Signal 'imem<129>', unconnected in block 'InstructionMemory', is tied to its initial value (00000100000000110000000000011000).
+WARNING:Xst:2935 - Signal 'imem<130>', unconnected in block 'InstructionMemory', is tied to its initial value (00011100011010000000000000000001).
+WARNING:Xst:2935 - Signal 'imem<131>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000101010000011100000010001).
+WARNING:Xst:2935 - Signal 'imem<132>', unconnected in block 'InstructionMemory', is tied to its initial value (00001100100010010000000000011111).
+WARNING:Xst:2935 - Signal 'imem<133>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000100000000010000).
+WARNING:Xst:2935 - Signal 'imem<134>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000001110101100000010000).
+WARNING:Xst:2935 - Signal 'imem<135>', unconnected in block 'InstructionMemory', is tied to its initial value (00101001000010010000000000000101).
+WARNING:Xst:2935 - Signal 'imem<136>', unconnected in block 'InstructionMemory', is tied to its initial value (00011001011011000000000000000001).
+WARNING:Xst:2935 - Signal 'imem<137>', unconnected in block 'InstructionMemory', is tied to its initial value (00010101011011010000000000011111).
+WARNING:Xst:2935 - Signal 'imem<138>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001100011010101100000010000).
+WARNING:Xst:2935 - Signal 'imem<139>', unconnected in block 'InstructionMemory', is tied to its initial value (00000101000010000000000000000001).
+WARNING:Xst:2935 - Signal 'imem<140>', unconnected in block 'InstructionMemory', is tied to its initial value (00110000000000000000000010000111).
+WARNING:Xst:2935 - Signal 'imem<141>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100000000100000000010100).
+WARNING:Xst:2935 - Signal 'imem<142>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001011000000100100000010100).
+WARNING:Xst:2935 - Signal 'imem<143>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100010010100100000010010).
+WARNING:Xst:2935 - Signal 'imem<144>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001000010110100000000010010).
+WARNING:Xst:2935 - Signal 'imem<145>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001000010010010100000010000).
+WARNING:Xst:2935 - Signal 'imem<146>', unconnected in block 'InstructionMemory', is tied to its initial value (00011100011010000000000000000000).
+WARNING:Xst:2935 - Signal 'imem<147>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100010000011000000010001).
+WARNING:Xst:2935 - Signal 'imem<148>', unconnected in block 'InstructionMemory', is tied to its initial value (00001100101010010000000000011111).
+WARNING:Xst:2935 - Signal 'imem<149>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000000000100000000010000).
+WARNING:Xst:2935 - Signal 'imem<150>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000001100101000000010000).
+WARNING:Xst:2935 - Signal 'imem<151>', unconnected in block 'InstructionMemory', is tied to its initial value (00101001000010010000000000000101).
+WARNING:Xst:2935 - Signal 'imem<152>', unconnected in block 'InstructionMemory', is tied to its initial value (00011001010011000000000000000001).
+WARNING:Xst:2935 - Signal 'imem<153>', unconnected in block 'InstructionMemory', is tied to its initial value (00010101010011010000000000011111).
+WARNING:Xst:2935 - Signal 'imem<154>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001100011010101000000010000).
+WARNING:Xst:2935 - Signal 'imem<155>', unconnected in block 'InstructionMemory', is tied to its initial value (00000101000010000000000000000001).
+WARNING:Xst:2935 - Signal 'imem<156>', unconnected in block 'InstructionMemory', is tied to its initial value (00110000000000000000000010010111).
+WARNING:Xst:2935 - Signal 'imem<157>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001010000000100000000010100).
+WARNING:Xst:2935 - Signal 'imem<158>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000101000000100100000010100).
+WARNING:Xst:2935 - Signal 'imem<159>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001010010010100100000010010).
+WARNING:Xst:2935 - Signal 'imem<160>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000101010000100000000010010).
+WARNING:Xst:2935 - Signal 'imem<161>', unconnected in block 'InstructionMemory', is tied to its initial value (00000001000010010010000000010000).
+WARNING:Xst:2935 - Signal 'imem<162>', unconnected in block 'InstructionMemory', is tied to its initial value (00001000011000110000000000000010).
+WARNING:Xst:2935 - Signal 'imem<163>', unconnected in block 'InstructionMemory', is tied to its initial value (00101000011000000000000000000001).
+WARNING:Xst:2935 - Signal 'imem<164>', unconnected in block 'InstructionMemory', is tied to its initial value (00110000000000000000000010000010).
+WARNING:Xst:2935 - Signal 'imem<165>', unconnected in block 'InstructionMemory', is tied to its initial value (00011100011010000000000000000001).
+WARNING:Xst:2935 - Signal 'imem<166>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000101010000010100000010001).
+WARNING:Xst:2935 - Signal 'imem<167>', unconnected in block 'InstructionMemory', is tied to its initial value (00011100011010000000000000000000).
+WARNING:Xst:2935 - Signal 'imem<168>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000100010000010000000010001).
+WARNING:Xst:2935 - Signal 'imem<169>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000001011100100000010000).
+WARNING:Xst:2935 - Signal 'imem<170>', unconnected in block 'InstructionMemory', is tied to its initial value (00000000000001001100000000010000).
+WARNING:Xst:2935 - Signal 'imem<171>', unconnected in block 'InstructionMemory', is tied to its initial value (11111100000000000000000000000000).
+    Summary:
+	inferred 127 Multiplexer(s).
+Unit <InstructionMemory> synthesized.
+
+Synthesizing Unit <ADDER>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\ADDER.vhd".
+    Found 32-bit adder for signal <output> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADDER> synthesized.
+
+Synthesizing Unit <MUX>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\MUX.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX> synthesized.
+
+Synthesizing Unit <control_unit>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\control_unit.vhd".
+WARNING:Xst:647 - Input <func<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 6-bit comparator lessequal for signal <n0056> created at line 120
+    Found 6-bit comparator lessequal for signal <n0058> created at line 122
+    Summary:
+	inferred   2 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <control_unit> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\ALU.vhd".
+    Found 32-bit adder for signal <A_input[31]_B_input[31]_add_5_OUT> created at line 71.
+    Found 32-bit subtractor for signal <GND_45_o_GND_45_o_sub_7_OUT<31:0>> created at line 72.
+    Found 32-bit shifter logical left for signal <A_input[31]_B_input[31]_shift_left_10_OUT> created at line 76
+    Found 32-bit shifter logical right for signal <A_input[31]_B_input[31]_shift_right_11_OUT> created at line 77
+    Found 32-bit 8-to-1 multiplexer for signal <ALU_output> created at line 70.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   4 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "C:\NYU VHDL\NYU_6463_Processor\RegisterFile.vhd".
+    Found 32-bit register for signal <regmem<1>>.
+    Found 32-bit register for signal <regmem<2>>.
+    Found 32-bit register for signal <regmem<3>>.
+    Found 32-bit register for signal <regmem<4>>.
+    Found 32-bit register for signal <regmem<5>>.
+    Found 32-bit register for signal <regmem<6>>.
+    Found 32-bit register for signal <regmem<7>>.
+    Found 32-bit register for signal <regmem<8>>.
+    Found 32-bit register for signal <regmem<9>>.
+    Found 32-bit register for signal <regmem<10>>.
+    Found 32-bit register for signal <regmem<11>>.
+    Found 32-bit register for signal <regmem<12>>.
+    Found 32-bit register for signal <regmem<13>>.
+    Found 32-bit register for signal <regmem<14>>.
+    Found 32-bit register for signal <regmem<15>>.
+    Found 32-bit register for signal <regmem<16>>.
+    Found 32-bit register for signal <regmem<17>>.
+    Found 32-bit register for signal <regmem<18>>.
+    Found 32-bit register for signal <regmem<19>>.
+    Found 32-bit register for signal <regmem<20>>.
+    Found 32-bit register for signal <regmem<21>>.
+    Found 32-bit register for signal <regmem<22>>.
+    Found 32-bit register for signal <regmem<23>>.
+    Found 32-bit register for signal <regmem<24>>.
+    Found 32-bit register for signal <regmem<25>>.
+    Found 32-bit register for signal <regmem<26>>.
+    Found 32-bit register for signal <regmem<27>>.
+    Found 32-bit register for signal <regmem<28>>.
+    Found 32-bit register for signal <regmem<29>>.
+    Found 32-bit register for signal <regmem<30>>.
+    Found 32-bit register for signal <regmem<31>>.
+    Found 32-bit register for signal <regmem<0>>.
+INFO:Xst:3019 - HDL ADVISOR - 1024 flip-flops were inferred for signal <regmem>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:3019 - HDL ADVISOR - 1024 flip-flops were inferred for signal <regmem>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 32-bit 32-to-1 multiplexer for signal <rdreg1[4]_regmem[31][31]_wide_mux_1_OUT> created at line 91.
+    Found 32-bit 32-to-1 multiplexer for signal <rdreg2[4]_regmem[31][31]_wide_mux_4_OUT> created at line 95.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <RegisterFile> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x32-bit single-port RAM                             : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+# Registers                                            : 33
+ 32-bit register                                       : 33
+# Comparators                                          : 2
+ 6-bit comparator lessequal                            : 2
+# Multiplexers                                         : 148
+ 3-bit 2-to-1 multiplexer                              : 6
+ 32-bit 2-to-1 multiplexer                             : 137
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 8-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <DataMemory>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_datamem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wrtmemen>      | high     |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <wrtdata>       |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <DataMemory> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x32-bit single-port distributed RAM                 : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 1
+# Registers                                            : 1056
+ Flip-Flops                                            : 1056
+# Comparators                                          : 2
+ 6-bit comparator lessequal                            : 2
+# Multiplexers                                         : 210
+ 1-bit 32-to-1 multiplexer                             : 64
+ 3-bit 2-to-1 multiplexer                              : 6
+ 32-bit 2-to-1 multiplexer                             : 137
+ 32-bit 8-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Program_Counter> ...
+
+Optimizing unit <cpu> ...
+
+Optimizing unit <Instruction_Fetch> ...
+
+Optimizing unit <InstructionMemory> ...
+
+Optimizing unit <RegisterFile> ...
+
+Optimizing unit <ALU> ...
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_31> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_30> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_29> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_28> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_27> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_26> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_25> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_24> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_23> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_22> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_21> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_20> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_19> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_18> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_17> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_16> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_15> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_14> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_13> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_12> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_11> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_10> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_9> of sequential type is unconnected in block <cpu>.
+WARNING:Xst:2677 - Node <InstrFetch/PC/output_8> of sequential type is unconnected in block <cpu>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cpu, actual ratio is 3.
+FlipFlop InstrFetch/PC/output_4 has been replicated 1 time(s)
+FlipFlop InstrFetch/PC/output_5 has been replicated 1 time(s)
+FlipFlop InstrFetch/PC/output_6 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1035
+ Flip-Flops                                            : 1035
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : cpu.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1907
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 7
+#      LUT2                        : 10
+#      LUT3                        : 93
+#      LUT4                        : 174
+#      LUT5                        : 191
+#      LUT6                        : 1211
+#      MUXCY                       : 76
+#      MUXF7                       : 62
+#      VCC                         : 1
+#      XORCY                       : 80
+# FlipFlops/Latches                : 1035
+#      FDC                         : 11
+#      FDE                         : 1024
+# RAMS                             : 32
+#      RAM32X1S                    : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 292
+#      IBUF                        : 195
+#      OBUF                        : 97
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1035  out of  126800     0%  
+ Number of Slice LUTs:                 1719  out of  63400     2%  
+    Number used as Logic:              1687  out of  63400     2%  
+    Number used as Memory:               32  out of  19000     0%  
+       Number used as RAM:               32
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2614
+   Number with an unused Flip Flop:    1579  out of   2614    60%  
+   Number with an unused LUT:           895  out of   2614    34%  
+   Number of fully used LUT-FF pairs:   140  out of   2614     5%  
+   Number of unique control sets:        33
+
+IO Utilization: 
+ Number of IOs:                         293
+ Number of bonded IOBs:                 293  out of    210   139% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1067  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 8.028ns (Maximum Frequency: 124.559MHz)
+   Minimum input arrival time before clock: 7.257ns
+   Maximum output required time after clock: 4.850ns
+   Maximum combinational path delay: 4.410ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.028ns (frequency: 124.559MHz)
+  Total number of paths / destination ports: 809688922 / 2283
+-------------------------------------------------------------------------
+Delay:               8.028ns (Levels of Logic = 15)
+  Source:            InstrFetch/PC/output_0 (FF)
+  Destination:       InstrFetch/PC/output_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: InstrFetch/PC/output_0 to InstrFetch/PC/output_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            178   0.361   0.812  InstrFetch/PC/output_0 (InstrFetch/PC/output_0)
+     LUT6:I1->O            1   0.097   0.000  InstrFetch/InstrMem/Instruction<16>4_F (N293)
+     MUXF7:I0->O           1   0.277   0.295  InstrFetch/InstrMem/Instruction<16>4 (InstrFetch/InstrMem/Instruction<16>3)
+     LUT6:I5->O          260   0.097   0.437  InstrFetch/InstrMem/Instruction<16>11 (instruction_16_OBUF)
+     LUT6:I5->O            1   0.097   0.556  RegFile/mux43_92 (RegFile/mux43_92)
+     LUT6:I2->O            2   0.097   0.384  RegFile/mux43_4 (RegFile/mux43_4)
+     LUT6:I4->O           58   0.097   0.804  ALUMAIN/Mmux_B_input121 (ALUMAIN/B_input<1>)
+     LUT6:I0->O            4   0.097   0.525  ALUMAIN/Sh131 (ALUMAIN/Sh13)
+     LUT6:I3->O            2   0.097   0.299  ALUMAIN/Sh451 (ALUMAIN/Sh45)
+     LUT6:I5->O            2   0.097   0.515  ALUMAIN/Mmux_ALU_output225 (ALUMAIN/Mmux_ALU_output224)
+     LUT6:I3->O            1   0.097   0.295  ALUMAIN/Mmux_ALU_output227_SW0 (N145)
+     LUT5:I4->O            1   0.097   0.295  ALUMAIN/Mmux_ALU_output217_SW0 (N159)
+     LUT6:I5->O            8   0.097   0.327  ALUMAIN/zero1 (ALUMAIN/zero)
+     LUT6:I5->O            1   0.097   0.000  ALUMAIN/zero8_SW1_G (N272)
+     MUXF7:I1->O           1   0.279   0.295  ALUMAIN/zero8_SW1 (N173)
+     LUT6:I5->O            1   0.097   0.000  InstrFetch/nextpcMUX/Mmux_output2 (InstrFetch/next_pc<0>)
+     FDC:D                     0.008          InstrFetch/PC/output_0
+    ----------------------------------------
+    Total                      8.028ns (2.186ns logic, 5.842ns route)
+                                       (27.2% logic, 72.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 11969914 / 2230
+-------------------------------------------------------------------------
+Offset:              7.257ns (Levels of Logic = 14)
+  Source:            skey<95> (PAD)
+  Destination:       InstrFetch/PC/output_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: skey<95> to InstrFetch/PC/output_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.683  skey_95_IBUF (skey_95_IBUF)
+     LUT5:I0->O            1   0.097   0.511  InstrFetch/InstrMem/Instruction<15>9 (InstrFetch/InstrMem/Instruction<15>8)
+     LUT5:I2->O            1   0.097   0.295  InstrFetch/InstrMem/Instruction<15>11 (InstrFetch/InstrMem/Instruction<15>10)
+     LUT6:I5->O           35   0.097   0.403  InstrFetch/InstrMem/Instruction<15>16 (InstrFetch/InstrMem/Instruction<15>15)
+     LUT3:I2->O           24   0.097   0.659  InstrFetch/InstrMem/Instruction<15>17 (instruction_15_OBUF)
+     LUT6:I2->O            3   0.097   0.693  ALUMAIN/Mmux_B_input171 (ALUMAIN/B_input<24>)
+     LUT5:I0->O            1   0.097   0.556  ALUMAIN/out6 (ALUMAIN/out5)
+     LUT6:I2->O           42   0.097   0.792  ALUMAIN/out7 (ALUMAIN/_n0039)
+     LUT6:I1->O            1   0.097   0.295  ALUMAIN/Mmux_ALU_output227_SW0 (N145)
+     LUT5:I4->O            1   0.097   0.295  ALUMAIN/Mmux_ALU_output217_SW0 (N159)
+     LUT6:I5->O            8   0.097   0.327  ALUMAIN/zero1 (ALUMAIN/zero)
+     LUT6:I5->O            1   0.097   0.000  ALUMAIN/zero8_SW1_G (N272)
+     MUXF7:I1->O           1   0.279   0.295  ALUMAIN/zero8_SW1 (N173)
+     LUT6:I5->O            1   0.097   0.000  InstrFetch/nextpcMUX/Mmux_output2 (InstrFetch/next_pc<0>)
+     FDC:D                     0.008          InstrFetch/PC/output_0
+    ----------------------------------------
+    Total                      7.257ns (1.452ns logic, 5.805ns route)
+                                       (20.0% logic, 80.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2621 / 97
+-------------------------------------------------------------------------
+Offset:              4.850ns (Levels of Logic = 9)
+  Source:            InstrFetch/PC/output_6 (FF)
+  Destination:       data_vld (PAD)
+  Source Clock:      clk rising
+
+  Data Path: InstrFetch/PC/output_6 to data_vld
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            181   0.361   0.823  InstrFetch/PC/output_6 (InstrFetch/PC/output_6)
+     LUT6:I0->O            1   0.097   0.000  InstrFetch/InstrMem/Instruction<7>15_G (N368)
+     MUXF7:I1->O           2   0.279   0.299  InstrFetch/InstrMem/Instruction<7>15 (InstrFetch/InstrMem/Instruction<7>14)
+     LUT6:I5->O            1   0.097   0.000  InstrFetch/InstrMem/Instruction<7>16_G (N360)
+     MUXF7:I1->O           4   0.279   0.309  InstrFetch/InstrMem/Instruction<7>16 (InstrFetch/InstrMem/Instruction<7>15)
+     LUT3:I2->O            5   0.097   0.575  InstrFetch/InstrMem/Instruction<7>17 (instruction_7_OBUF)
+     LUT6:I2->O            1   0.097   0.683  data_vld<31>5 (data_vld<31>5)
+     LUT5:I0->O            1   0.097   0.379  data_vld<31>6 (data_vld<31>6)
+     LUT3:I1->O            1   0.097   0.279  data_vld<31>7 (data_vld_OBUF)
+     OBUF:I->O                 0.000          data_vld_OBUF (data_vld)
+    ----------------------------------------
+    Total                      4.850ns (1.501ns logic, 3.349ns route)
+                                       (30.9% logic, 69.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 584 / 81
+-------------------------------------------------------------------------
+Delay:               4.410ns (Levels of Logic = 9)
+  Source:            skey<103> (PAD)
+  Destination:       data_vld (PAD)
+
+  Data Path: skey<103> to data_vld
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.001   0.683  skey_103_IBUF (skey_103_IBUF)
+     LUT5:I0->O            1   0.097   0.556  InstrFetch/InstrMem/Instruction<7>5 (InstrFetch/InstrMem/Instruction<7>4)
+     LUT6:I2->O            1   0.097   0.000  InstrFetch/InstrMem/Instruction<7>7_F (N349)
+     MUXF7:I0->O           4   0.277   0.393  InstrFetch/InstrMem/Instruction<7>7 (InstrFetch/InstrMem/Instruction<7>6)
+     LUT3:I1->O            5   0.097   0.575  InstrFetch/InstrMem/Instruction<7>17 (instruction_7_OBUF)
+     LUT6:I2->O            1   0.097   0.683  data_vld<31>5 (data_vld<31>5)
+     LUT5:I0->O            1   0.097   0.379  data_vld<31>6 (data_vld<31>6)
+     LUT3:I1->O            1   0.097   0.279  data_vld<31>7 (data_vld_OBUF)
+     OBUF:I->O                 0.000          data_vld_OBUF (data_vld)
+    ----------------------------------------
+    Total                      4.410ns (0.860ns logic, 3.550ns route)
+                                       (19.5% logic, 80.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.028|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 59.00 secs
+Total CPU time to Xst completion: 59.46 secs
+ 
+--> 
+
+Total memory usage is 355748 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  187 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

@@ -1,0 +1,613 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Dec 12 15:02:15 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "btnC" LOCATE = SITE "N17" LEVEL 1;
+COMP "btnD" LOCATE = SITE "P18" LEVEL 1;
+COMP "btnL" LOCATE = SITE "P17" LEVEL 1;
+COMP "btnR" LOCATE = SITE "M17" LEVEL 1;
+COMP "btnU" LOCATE = SITE "M18" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "sw<10>" LOCATE = SITE "R16" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "R10" LEVEL 1;
+COMP "sw<11>" LOCATE = SITE "T13" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "K16" LEVEL 1;
+COMP "sw<12>" LOCATE = SITE "H6" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "K13" LEVEL 1;
+COMP "sw<13>" LOCATE = SITE "U12" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "P15" LEVEL 1;
+COMP "sw<14>" LOCATE = SITE "U11" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "T11" LEVEL 1;
+COMP "sw<15>" LOCATE = SITE "V10" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L18" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "J15" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "L16" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "R15" LEVEL 1;
+COMP "sw<4>" LOCATE = SITE "R17" LEVEL 1;
+COMP "sw<5>" LOCATE = SITE "T18" LEVEL 1;
+COMP "sw<6>" LOCATE = SITE "U18" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "R13" LEVEL 1;
+COMP "sw<8>" LOCATE = SITE "T8" LEVEL 1;
+COMP "sw<9>" LOCATE = SITE "U8" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "H17" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "J13" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "R18" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "V17" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "U17" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "U16" LEVEL 1;
+COMP "led<8>" LOCATE = SITE "V16" LEVEL 1;
+COMP "led<9>" LOCATE = SITE "T15" LEVEL 1;
+COMP "clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "led<14>" LOCATE = SITE "V12" LEVEL 1;
+COMP "led<13>" LOCATE = SITE "V14" LEVEL 1;
+COMP "led<12>" LOCATE = SITE "V15" LEVEL 1;
+COMP "led<11>" LOCATE = SITE "T16" LEVEL 1;
+COMP "led<10>" LOCATE = SITE "U14" LEVEL 1;
+COMP "led<15>" LOCATE = SITE "V11" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "J17" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "J18" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "T9" LEVEL 1;
+COMP "dp" LOCATE = SITE "H15" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "J14" LEVEL 1;
+COMP "an<4>" LOCATE = SITE "P14" LEVEL 1;
+COMP "an<5>" LOCATE = SITE "T14" LEVEL 1;
+COMP "an<6>" LOCATE = SITE "K2" LEVEL 1;
+COMP "an<7>" LOCATE = SITE "U13" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "seg_0" BEL "seg_1" BEL "seg_2" BEL "seg_3" BEL
+        "seg_4" BEL "seg_5" BEL "seg_6" BEL "dp" BEL "an_sig_0" BEL "an_sig_1"
+        BEL "an_sig_2" BEL "an_sig_3" BEL "an_sig_4" BEL "an_sig_5" BEL
+        "an_sig_6" BEL "an_sig_7" BEL "clk_de" BEL "counter_0" BEL "counter_1"
+        BEL "counter_2" BEL "counter_3" BEL "counter_4" BEL "counter_5" BEL
+        "counter_6" BEL "counter_7" BEL "counter_8" BEL "counter_9" BEL
+        "counter_10" BEL "counter_11" BEL "counter_12" BEL "counter_13" BEL
+        "counter_14" BEL "counter_15" BEL "clk_de_counter_0" BEL
+        "clk_de_counter_1" BEL "clk_de_counter_2" BEL "clk_de_counter_3" BEL
+        "clk_de_counter_4" BEL "clk_de_counter_5" BEL "clk_de_counter_6" BEL
+        "clk_de_counter_7" BEL "clk_de_counter_8" BEL "clk_de_counter_9" BEL
+        "clk_de_counter_10" BEL "clk_de_counter_11" BEL "clk_de_counter_12"
+        BEL "clk_de_counter_13" BEL "clk_de_counter_14" BEL
+        "clk_de_counter_15" BEL "clk_de_counter_16" BEL "clk_de_counter_17"
+        BEL "clk_de_counter_18" BEL "clk_de_counter_19" BEL
+        "cpuall/DMem/Mram_datamem32" BEL "cpuall/DMem/Mram_datamem31" BEL
+        "cpuall/DMem/Mram_datamem30" BEL "cpuall/DMem/Mram_datamem29" BEL
+        "cpuall/DMem/Mram_datamem28" BEL "cpuall/DMem/Mram_datamem27" BEL
+        "cpuall/DMem/Mram_datamem25" BEL "cpuall/DMem/Mram_datamem24" BEL
+        "cpuall/DMem/Mram_datamem26" BEL "cpuall/DMem/Mram_datamem23" BEL
+        "cpuall/DMem/Mram_datamem22" BEL "cpuall/DMem/Mram_datamem20" BEL
+        "cpuall/DMem/Mram_datamem19" BEL "cpuall/DMem/Mram_datamem21" BEL
+        "cpuall/DMem/Mram_datamem18" BEL "cpuall/DMem/Mram_datamem17" BEL
+        "cpuall/DMem/Mram_datamem15" BEL "cpuall/DMem/Mram_datamem14" BEL
+        "cpuall/DMem/Mram_datamem16" BEL "cpuall/DMem/Mram_datamem13" BEL
+        "cpuall/DMem/Mram_datamem12" BEL "cpuall/DMem/Mram_datamem10" BEL
+        "cpuall/DMem/Mram_datamem9" BEL "cpuall/DMem/Mram_datamem11" BEL
+        "cpuall/DMem/Mram_datamem8" BEL "cpuall/DMem/Mram_datamem7" BEL
+        "cpuall/DMem/Mram_datamem5" BEL "cpuall/DMem/Mram_datamem4" BEL
+        "cpuall/DMem/Mram_datamem6" BEL "cpuall/DMem/Mram_datamem3" BEL
+        "cpuall/DMem/Mram_datamem2" BEL "cpuall/DMem/Mram_datamem1" BEL
+        "cpuall/InstrFetch/PC/output_7" BEL "cpuall/InstrFetch/PC/output_6"
+        BEL "cpuall/InstrFetch/PC/output_5" BEL
+        "cpuall/InstrFetch/PC/output_4" BEL "cpuall/InstrFetch/PC/output_3"
+        BEL "cpuall/InstrFetch/PC/output_2" BEL
+        "cpuall/InstrFetch/PC/output_1" BEL "cpuall/InstrFetch/PC/output_0"
+        BEL "cpuall/RegFile/regmem_0_31" BEL "cpuall/RegFile/regmem_0_30" BEL
+        "cpuall/RegFile/regmem_0_29" BEL "cpuall/RegFile/regmem_0_28" BEL
+        "cpuall/RegFile/regmem_0_27" BEL "cpuall/RegFile/regmem_0_26" BEL
+        "cpuall/RegFile/regmem_0_25" BEL "cpuall/RegFile/regmem_0_24" BEL
+        "cpuall/RegFile/regmem_0_23" BEL "cpuall/RegFile/regmem_0_22" BEL
+        "cpuall/RegFile/regmem_0_21" BEL "cpuall/RegFile/regmem_0_20" BEL
+        "cpuall/RegFile/regmem_0_19" BEL "cpuall/RegFile/regmem_0_18" BEL
+        "cpuall/RegFile/regmem_0_17" BEL "cpuall/RegFile/regmem_0_16" BEL
+        "cpuall/RegFile/regmem_0_15" BEL "cpuall/RegFile/regmem_0_14" BEL
+        "cpuall/RegFile/regmem_0_13" BEL "cpuall/RegFile/regmem_0_12" BEL
+        "cpuall/RegFile/regmem_0_11" BEL "cpuall/RegFile/regmem_0_10" BEL
+        "cpuall/RegFile/regmem_0_9" BEL "cpuall/RegFile/regmem_0_8" BEL
+        "cpuall/RegFile/regmem_0_7" BEL "cpuall/RegFile/regmem_0_6" BEL
+        "cpuall/RegFile/regmem_0_5" BEL "cpuall/RegFile/regmem_0_4" BEL
+        "cpuall/RegFile/regmem_0_3" BEL "cpuall/RegFile/regmem_0_2" BEL
+        "cpuall/RegFile/regmem_0_1" BEL "cpuall/RegFile/regmem_0_0" BEL
+        "cpuall/RegFile/regmem_31_31" BEL "cpuall/RegFile/regmem_31_30" BEL
+        "cpuall/RegFile/regmem_31_29" BEL "cpuall/RegFile/regmem_31_28" BEL
+        "cpuall/RegFile/regmem_31_27" BEL "cpuall/RegFile/regmem_31_26" BEL
+        "cpuall/RegFile/regmem_31_25" BEL "cpuall/RegFile/regmem_31_24" BEL
+        "cpuall/RegFile/regmem_31_23" BEL "cpuall/RegFile/regmem_31_22" BEL
+        "cpuall/RegFile/regmem_31_21" BEL "cpuall/RegFile/regmem_31_20" BEL
+        "cpuall/RegFile/regmem_31_19" BEL "cpuall/RegFile/regmem_31_18" BEL
+        "cpuall/RegFile/regmem_31_17" BEL "cpuall/RegFile/regmem_31_16" BEL
+        "cpuall/RegFile/regmem_31_15" BEL "cpuall/RegFile/regmem_31_14" BEL
+        "cpuall/RegFile/regmem_31_13" BEL "cpuall/RegFile/regmem_31_12" BEL
+        "cpuall/RegFile/regmem_31_11" BEL "cpuall/RegFile/regmem_31_10" BEL
+        "cpuall/RegFile/regmem_31_9" BEL "cpuall/RegFile/regmem_31_8" BEL
+        "cpuall/RegFile/regmem_31_7" BEL "cpuall/RegFile/regmem_31_6" BEL
+        "cpuall/RegFile/regmem_31_5" BEL "cpuall/RegFile/regmem_31_4" BEL
+        "cpuall/RegFile/regmem_31_3" BEL "cpuall/RegFile/regmem_31_2" BEL
+        "cpuall/RegFile/regmem_31_1" BEL "cpuall/RegFile/regmem_31_0" BEL
+        "cpuall/RegFile/regmem_29_31" BEL "cpuall/RegFile/regmem_29_30" BEL
+        "cpuall/RegFile/regmem_29_29" BEL "cpuall/RegFile/regmem_29_28" BEL
+        "cpuall/RegFile/regmem_29_27" BEL "cpuall/RegFile/regmem_29_26" BEL
+        "cpuall/RegFile/regmem_29_25" BEL "cpuall/RegFile/regmem_29_24" BEL
+        "cpuall/RegFile/regmem_29_23" BEL "cpuall/RegFile/regmem_29_22" BEL
+        "cpuall/RegFile/regmem_29_21" BEL "cpuall/RegFile/regmem_29_20" BEL
+        "cpuall/RegFile/regmem_29_19" BEL "cpuall/RegFile/regmem_29_18" BEL
+        "cpuall/RegFile/regmem_29_17" BEL "cpuall/RegFile/regmem_29_16" BEL
+        "cpuall/RegFile/regmem_29_15" BEL "cpuall/RegFile/regmem_29_14" BEL
+        "cpuall/RegFile/regmem_29_13" BEL "cpuall/RegFile/regmem_29_12" BEL
+        "cpuall/RegFile/regmem_29_11" BEL "cpuall/RegFile/regmem_29_10" BEL
+        "cpuall/RegFile/regmem_29_9" BEL "cpuall/RegFile/regmem_29_8" BEL
+        "cpuall/RegFile/regmem_29_7" BEL "cpuall/RegFile/regmem_29_6" BEL
+        "cpuall/RegFile/regmem_29_5" BEL "cpuall/RegFile/regmem_29_4" BEL
+        "cpuall/RegFile/regmem_29_3" BEL "cpuall/RegFile/regmem_29_2" BEL
+        "cpuall/RegFile/regmem_29_1" BEL "cpuall/RegFile/regmem_29_0" BEL
+        "cpuall/RegFile/regmem_28_31" BEL "cpuall/RegFile/regmem_28_30" BEL
+        "cpuall/RegFile/regmem_28_29" BEL "cpuall/RegFile/regmem_28_28" BEL
+        "cpuall/RegFile/regmem_28_27" BEL "cpuall/RegFile/regmem_28_26" BEL
+        "cpuall/RegFile/regmem_28_25" BEL "cpuall/RegFile/regmem_28_24" BEL
+        "cpuall/RegFile/regmem_28_23" BEL "cpuall/RegFile/regmem_28_22" BEL
+        "cpuall/RegFile/regmem_28_21" BEL "cpuall/RegFile/regmem_28_20" BEL
+        "cpuall/RegFile/regmem_28_19" BEL "cpuall/RegFile/regmem_28_18" BEL
+        "cpuall/RegFile/regmem_28_17" BEL "cpuall/RegFile/regmem_28_16" BEL
+        "cpuall/RegFile/regmem_28_15" BEL "cpuall/RegFile/regmem_28_14" BEL
+        "cpuall/RegFile/regmem_28_13" BEL "cpuall/RegFile/regmem_28_12" BEL
+        "cpuall/RegFile/regmem_28_11" BEL "cpuall/RegFile/regmem_28_10" BEL
+        "cpuall/RegFile/regmem_28_9" BEL "cpuall/RegFile/regmem_28_8" BEL
+        "cpuall/RegFile/regmem_28_7" BEL "cpuall/RegFile/regmem_28_6" BEL
+        "cpuall/RegFile/regmem_28_5" BEL "cpuall/RegFile/regmem_28_4" BEL
+        "cpuall/RegFile/regmem_28_3" BEL "cpuall/RegFile/regmem_28_2" BEL
+        "cpuall/RegFile/regmem_28_1" BEL "cpuall/RegFile/regmem_28_0" BEL
+        "cpuall/RegFile/regmem_30_31" BEL "cpuall/RegFile/regmem_30_30" BEL
+        "cpuall/RegFile/regmem_30_29" BEL "cpuall/RegFile/regmem_30_28" BEL
+        "cpuall/RegFile/regmem_30_27" BEL "cpuall/RegFile/regmem_30_26" BEL
+        "cpuall/RegFile/regmem_30_25" BEL "cpuall/RegFile/regmem_30_24" BEL
+        "cpuall/RegFile/regmem_30_23" BEL "cpuall/RegFile/regmem_30_22" BEL
+        "cpuall/RegFile/regmem_30_21" BEL "cpuall/RegFile/regmem_30_20" BEL
+        "cpuall/RegFile/regmem_30_19" BEL "cpuall/RegFile/regmem_30_18" BEL
+        "cpuall/RegFile/regmem_30_17" BEL "cpuall/RegFile/regmem_30_16" BEL
+        "cpuall/RegFile/regmem_30_15" BEL "cpuall/RegFile/regmem_30_14" BEL
+        "cpuall/RegFile/regmem_30_13" BEL "cpuall/RegFile/regmem_30_12" BEL
+        "cpuall/RegFile/regmem_30_11" BEL "cpuall/RegFile/regmem_30_10" BEL
+        "cpuall/RegFile/regmem_30_9" BEL "cpuall/RegFile/regmem_30_8" BEL
+        "cpuall/RegFile/regmem_30_7" BEL "cpuall/RegFile/regmem_30_6" BEL
+        "cpuall/RegFile/regmem_30_5" BEL "cpuall/RegFile/regmem_30_4" BEL
+        "cpuall/RegFile/regmem_30_3" BEL "cpuall/RegFile/regmem_30_2" BEL
+        "cpuall/RegFile/regmem_30_1" BEL "cpuall/RegFile/regmem_30_0" BEL
+        "cpuall/RegFile/regmem_27_31" BEL "cpuall/RegFile/regmem_27_30" BEL
+        "cpuall/RegFile/regmem_27_29" BEL "cpuall/RegFile/regmem_27_28" BEL
+        "cpuall/RegFile/regmem_27_27" BEL "cpuall/RegFile/regmem_27_26" BEL
+        "cpuall/RegFile/regmem_27_25" BEL "cpuall/RegFile/regmem_27_24" BEL
+        "cpuall/RegFile/regmem_27_23" BEL "cpuall/RegFile/regmem_27_22" BEL
+        "cpuall/RegFile/regmem_27_21" BEL "cpuall/RegFile/regmem_27_20" BEL
+        "cpuall/RegFile/regmem_27_19" BEL "cpuall/RegFile/regmem_27_18" BEL
+        "cpuall/RegFile/regmem_27_17" BEL "cpuall/RegFile/regmem_27_16" BEL
+        "cpuall/RegFile/regmem_27_15" BEL "cpuall/RegFile/regmem_27_14" BEL
+        "cpuall/RegFile/regmem_27_13" BEL "cpuall/RegFile/regmem_27_12" BEL
+        "cpuall/RegFile/regmem_27_11" BEL "cpuall/RegFile/regmem_27_10" BEL
+        "cpuall/RegFile/regmem_27_9" BEL "cpuall/RegFile/regmem_27_8" BEL
+        "cpuall/RegFile/regmem_27_7" BEL "cpuall/RegFile/regmem_27_6" BEL
+        "cpuall/RegFile/regmem_27_5" BEL "cpuall/RegFile/regmem_27_4" BEL
+        "cpuall/RegFile/regmem_27_3" BEL "cpuall/RegFile/regmem_27_2" BEL
+        "cpuall/RegFile/regmem_27_1" BEL "cpuall/RegFile/regmem_27_0" BEL
+        "cpuall/RegFile/regmem_26_31" BEL "cpuall/RegFile/regmem_26_30" BEL
+        "cpuall/RegFile/regmem_26_29" BEL "cpuall/RegFile/regmem_26_28" BEL
+        "cpuall/RegFile/regmem_26_27" BEL "cpuall/RegFile/regmem_26_26" BEL
+        "cpuall/RegFile/regmem_26_25" BEL "cpuall/RegFile/regmem_26_24" BEL
+        "cpuall/RegFile/regmem_26_23" BEL "cpuall/RegFile/regmem_26_22" BEL
+        "cpuall/RegFile/regmem_26_21" BEL "cpuall/RegFile/regmem_26_20" BEL
+        "cpuall/RegFile/regmem_26_19" BEL "cpuall/RegFile/regmem_26_18" BEL
+        "cpuall/RegFile/regmem_26_17" BEL "cpuall/RegFile/regmem_26_16" BEL
+        "cpuall/RegFile/regmem_26_15" BEL "cpuall/RegFile/regmem_26_14" BEL
+        "cpuall/RegFile/regmem_26_13" BEL "cpuall/RegFile/regmem_26_12" BEL
+        "cpuall/RegFile/regmem_26_11" BEL "cpuall/RegFile/regmem_26_10" BEL
+        "cpuall/RegFile/regmem_26_9" BEL "cpuall/RegFile/regmem_26_8" BEL
+        "cpuall/RegFile/regmem_26_7" BEL "cpuall/RegFile/regmem_26_6" BEL
+        "cpuall/RegFile/regmem_26_5" BEL "cpuall/RegFile/regmem_26_4" BEL
+        "cpuall/RegFile/regmem_26_3" BEL "cpuall/RegFile/regmem_26_2" BEL
+        "cpuall/RegFile/regmem_26_1" BEL "cpuall/RegFile/regmem_26_0" BEL
+        "cpuall/RegFile/regmem_25_31" BEL "cpuall/RegFile/regmem_25_30" BEL
+        "cpuall/RegFile/regmem_25_29" BEL "cpuall/RegFile/regmem_25_28" BEL
+        "cpuall/RegFile/regmem_25_27" BEL "cpuall/RegFile/regmem_25_26" BEL
+        "cpuall/RegFile/regmem_25_25" BEL "cpuall/RegFile/regmem_25_24" BEL
+        "cpuall/RegFile/regmem_25_23" BEL "cpuall/RegFile/regmem_25_22" BEL
+        "cpuall/RegFile/regmem_25_21" BEL "cpuall/RegFile/regmem_25_20" BEL
+        "cpuall/RegFile/regmem_25_19" BEL "cpuall/RegFile/regmem_25_18" BEL
+        "cpuall/RegFile/regmem_25_17" BEL "cpuall/RegFile/regmem_25_16" BEL
+        "cpuall/RegFile/regmem_25_15" BEL "cpuall/RegFile/regmem_25_14" BEL
+        "cpuall/RegFile/regmem_25_13" BEL "cpuall/RegFile/regmem_25_12" BEL
+        "cpuall/RegFile/regmem_25_11" BEL "cpuall/RegFile/regmem_25_10" BEL
+        "cpuall/RegFile/regmem_25_9" BEL "cpuall/RegFile/regmem_25_8" BEL
+        "cpuall/RegFile/regmem_25_7" BEL "cpuall/RegFile/regmem_25_6" BEL
+        "cpuall/RegFile/regmem_25_5" BEL "cpuall/RegFile/regmem_25_4" BEL
+        "cpuall/RegFile/regmem_25_3" BEL "cpuall/RegFile/regmem_25_2" BEL
+        "cpuall/RegFile/regmem_25_1" BEL "cpuall/RegFile/regmem_25_0" BEL
+        "cpuall/RegFile/regmem_24_31" BEL "cpuall/RegFile/regmem_24_30" BEL
+        "cpuall/RegFile/regmem_24_29" BEL "cpuall/RegFile/regmem_24_28" BEL
+        "cpuall/RegFile/regmem_24_27" BEL "cpuall/RegFile/regmem_24_26" BEL
+        "cpuall/RegFile/regmem_24_25" BEL "cpuall/RegFile/regmem_24_24" BEL
+        "cpuall/RegFile/regmem_24_23" BEL "cpuall/RegFile/regmem_24_22" BEL
+        "cpuall/RegFile/regmem_24_21" BEL "cpuall/RegFile/regmem_24_20" BEL
+        "cpuall/RegFile/regmem_24_19" BEL "cpuall/RegFile/regmem_24_18" BEL
+        "cpuall/RegFile/regmem_24_17" BEL "cpuall/RegFile/regmem_24_16" BEL
+        "cpuall/RegFile/regmem_24_15" BEL "cpuall/RegFile/regmem_24_14" BEL
+        "cpuall/RegFile/regmem_24_13" BEL "cpuall/RegFile/regmem_24_12" BEL
+        "cpuall/RegFile/regmem_24_11" BEL "cpuall/RegFile/regmem_24_10" BEL
+        "cpuall/RegFile/regmem_24_9" BEL "cpuall/RegFile/regmem_24_8" BEL
+        "cpuall/RegFile/regmem_24_7" BEL "cpuall/RegFile/regmem_24_6" BEL
+        "cpuall/RegFile/regmem_24_5" BEL "cpuall/RegFile/regmem_24_4" BEL
+        "cpuall/RegFile/regmem_24_3" BEL "cpuall/RegFile/regmem_24_2" BEL
+        "cpuall/RegFile/regmem_24_1" BEL "cpuall/RegFile/regmem_24_0" BEL
+        "cpuall/RegFile/regmem_23_31" BEL "cpuall/RegFile/regmem_23_30" BEL
+        "cpuall/RegFile/regmem_23_29" BEL "cpuall/RegFile/regmem_23_28" BEL
+        "cpuall/RegFile/regmem_23_27" BEL "cpuall/RegFile/regmem_23_26" BEL
+        "cpuall/RegFile/regmem_23_25" BEL "cpuall/RegFile/regmem_23_24" BEL
+        "cpuall/RegFile/regmem_23_23" BEL "cpuall/RegFile/regmem_23_22" BEL
+        "cpuall/RegFile/regmem_23_21" BEL "cpuall/RegFile/regmem_23_20" BEL
+        "cpuall/RegFile/regmem_23_19" BEL "cpuall/RegFile/regmem_23_18" BEL
+        "cpuall/RegFile/regmem_23_17" BEL "cpuall/RegFile/regmem_23_16" BEL
+        "cpuall/RegFile/regmem_23_15" BEL "cpuall/RegFile/regmem_23_14" BEL
+        "cpuall/RegFile/regmem_23_13" BEL "cpuall/RegFile/regmem_23_12" BEL
+        "cpuall/RegFile/regmem_23_11" BEL "cpuall/RegFile/regmem_23_10" BEL
+        "cpuall/RegFile/regmem_23_9" BEL "cpuall/RegFile/regmem_23_8" BEL
+        "cpuall/RegFile/regmem_23_7" BEL "cpuall/RegFile/regmem_23_6" BEL
+        "cpuall/RegFile/regmem_23_5" BEL "cpuall/RegFile/regmem_23_4" BEL
+        "cpuall/RegFile/regmem_23_3" BEL "cpuall/RegFile/regmem_23_2" BEL
+        "cpuall/RegFile/regmem_23_1" BEL "cpuall/RegFile/regmem_23_0" BEL
+        "cpuall/RegFile/regmem_22_31" BEL "cpuall/RegFile/regmem_22_30" BEL
+        "cpuall/RegFile/regmem_22_29" BEL "cpuall/RegFile/regmem_22_28" BEL
+        "cpuall/RegFile/regmem_22_27" BEL "cpuall/RegFile/regmem_22_26" BEL
+        "cpuall/RegFile/regmem_22_25" BEL "cpuall/RegFile/regmem_22_24" BEL
+        "cpuall/RegFile/regmem_22_23" BEL "cpuall/RegFile/regmem_22_22" BEL
+        "cpuall/RegFile/regmem_22_21" BEL "cpuall/RegFile/regmem_22_20" BEL
+        "cpuall/RegFile/regmem_22_19" BEL "cpuall/RegFile/regmem_22_18" BEL
+        "cpuall/RegFile/regmem_22_17" BEL "cpuall/RegFile/regmem_22_16" BEL
+        "cpuall/RegFile/regmem_22_15" BEL "cpuall/RegFile/regmem_22_14" BEL
+        "cpuall/RegFile/regmem_22_13" BEL "cpuall/RegFile/regmem_22_12" BEL
+        "cpuall/RegFile/regmem_22_11" BEL "cpuall/RegFile/regmem_22_10" BEL
+        "cpuall/RegFile/regmem_22_9" BEL "cpuall/RegFile/regmem_22_8" BEL
+        "cpuall/RegFile/regmem_22_7" BEL "cpuall/RegFile/regmem_22_6" BEL
+        "cpuall/RegFile/regmem_22_5" BEL "cpuall/RegFile/regmem_22_4" BEL
+        "cpuall/RegFile/regmem_22_3" BEL "cpuall/RegFile/regmem_22_2" BEL
+        "cpuall/RegFile/regmem_22_1" BEL "cpuall/RegFile/regmem_22_0" BEL
+        "cpuall/RegFile/regmem_20_31" BEL "cpuall/RegFile/regmem_20_30" BEL
+        "cpuall/RegFile/regmem_20_29" BEL "cpuall/RegFile/regmem_20_28" BEL
+        "cpuall/RegFile/regmem_20_27" BEL "cpuall/RegFile/regmem_20_26" BEL
+        "cpuall/RegFile/regmem_20_25" BEL "cpuall/RegFile/regmem_20_24" BEL
+        "cpuall/RegFile/regmem_20_23" BEL "cpuall/RegFile/regmem_20_22" BEL
+        "cpuall/RegFile/regmem_20_21" BEL "cpuall/RegFile/regmem_20_20" BEL
+        "cpuall/RegFile/regmem_20_19" BEL "cpuall/RegFile/regmem_20_18" BEL
+        "cpuall/RegFile/regmem_20_17" BEL "cpuall/RegFile/regmem_20_16" BEL
+        "cpuall/RegFile/regmem_20_15" BEL "cpuall/RegFile/regmem_20_14" BEL
+        "cpuall/RegFile/regmem_20_13" BEL "cpuall/RegFile/regmem_20_12" BEL
+        "cpuall/RegFile/regmem_20_11" BEL "cpuall/RegFile/regmem_20_10" BEL
+        "cpuall/RegFile/regmem_20_9" BEL "cpuall/RegFile/regmem_20_8" BEL
+        "cpuall/RegFile/regmem_20_7" BEL "cpuall/RegFile/regmem_20_6" BEL
+        "cpuall/RegFile/regmem_20_5" BEL "cpuall/RegFile/regmem_20_4" BEL
+        "cpuall/RegFile/regmem_20_3" BEL "cpuall/RegFile/regmem_20_2" BEL
+        "cpuall/RegFile/regmem_20_1" BEL "cpuall/RegFile/regmem_20_0" BEL
+        "cpuall/RegFile/regmem_19_31" BEL "cpuall/RegFile/regmem_19_30" BEL
+        "cpuall/RegFile/regmem_19_29" BEL "cpuall/RegFile/regmem_19_28" BEL
+        "cpuall/RegFile/regmem_19_27" BEL "cpuall/RegFile/regmem_19_26" BEL
+        "cpuall/RegFile/regmem_19_25" BEL "cpuall/RegFile/regmem_19_24" BEL
+        "cpuall/RegFile/regmem_19_23" BEL "cpuall/RegFile/regmem_19_22" BEL
+        "cpuall/RegFile/regmem_19_21" BEL "cpuall/RegFile/regmem_19_20" BEL
+        "cpuall/RegFile/regmem_19_19" BEL "cpuall/RegFile/regmem_19_18" BEL
+        "cpuall/RegFile/regmem_19_17" BEL "cpuall/RegFile/regmem_19_16" BEL
+        "cpuall/RegFile/regmem_19_15" BEL "cpuall/RegFile/regmem_19_14" BEL
+        "cpuall/RegFile/regmem_19_13" BEL "cpuall/RegFile/regmem_19_12" BEL
+        "cpuall/RegFile/regmem_19_11" BEL "cpuall/RegFile/regmem_19_10" BEL
+        "cpuall/RegFile/regmem_19_9" BEL "cpuall/RegFile/regmem_19_8" BEL
+        "cpuall/RegFile/regmem_19_7" BEL "cpuall/RegFile/regmem_19_6" BEL
+        "cpuall/RegFile/regmem_19_5" BEL "cpuall/RegFile/regmem_19_4" BEL
+        "cpuall/RegFile/regmem_19_3" BEL "cpuall/RegFile/regmem_19_2" BEL
+        "cpuall/RegFile/regmem_19_1" BEL "cpuall/RegFile/regmem_19_0" BEL
+        "cpuall/RegFile/regmem_21_31" BEL "cpuall/RegFile/regmem_21_30" BEL
+        "cpuall/RegFile/regmem_21_29" BEL "cpuall/RegFile/regmem_21_28" BEL
+        "cpuall/RegFile/regmem_21_27" BEL "cpuall/RegFile/regmem_21_26" BEL
+        "cpuall/RegFile/regmem_21_25" BEL "cpuall/RegFile/regmem_21_24" BEL
+        "cpuall/RegFile/regmem_21_23" BEL "cpuall/RegFile/regmem_21_22" BEL
+        "cpuall/RegFile/regmem_21_21" BEL "cpuall/RegFile/regmem_21_20" BEL
+        "cpuall/RegFile/regmem_21_19" BEL "cpuall/RegFile/regmem_21_18" BEL
+        "cpuall/RegFile/regmem_21_17" BEL "cpuall/RegFile/regmem_21_16" BEL
+        "cpuall/RegFile/regmem_21_15" BEL "cpuall/RegFile/regmem_21_14" BEL
+        "cpuall/RegFile/regmem_21_13" BEL "cpuall/RegFile/regmem_21_12" BEL
+        "cpuall/RegFile/regmem_21_11" BEL "cpuall/RegFile/regmem_21_10" BEL
+        "cpuall/RegFile/regmem_21_9" BEL "cpuall/RegFile/regmem_21_8" BEL
+        "cpuall/RegFile/regmem_21_7" BEL "cpuall/RegFile/regmem_21_6" BEL
+        "cpuall/RegFile/regmem_21_5" BEL "cpuall/RegFile/regmem_21_4" BEL
+        "cpuall/RegFile/regmem_21_3" BEL "cpuall/RegFile/regmem_21_2" BEL
+        "cpuall/RegFile/regmem_21_1" BEL "cpuall/RegFile/regmem_21_0" BEL
+        "cpuall/RegFile/regmem_18_31" BEL "cpuall/RegFile/regmem_18_30" BEL
+        "cpuall/RegFile/regmem_18_29" BEL "cpuall/RegFile/regmem_18_28" BEL
+        "cpuall/RegFile/regmem_18_27" BEL "cpuall/RegFile/regmem_18_26" BEL
+        "cpuall/RegFile/regmem_18_25" BEL "cpuall/RegFile/regmem_18_24" BEL
+        "cpuall/RegFile/regmem_18_23" BEL "cpuall/RegFile/regmem_18_22" BEL
+        "cpuall/RegFile/regmem_18_21" BEL "cpuall/RegFile/regmem_18_20" BEL
+        "cpuall/RegFile/regmem_18_19" BEL "cpuall/RegFile/regmem_18_18" BEL
+        "cpuall/RegFile/regmem_18_17" BEL "cpuall/RegFile/regmem_18_16" BEL
+        "cpuall/RegFile/regmem_18_15" BEL "cpuall/RegFile/regmem_18_14" BEL
+        "cpuall/RegFile/regmem_18_13" BEL "cpuall/RegFile/regmem_18_12" BEL
+        "cpuall/RegFile/regmem_18_11" BEL "cpuall/RegFile/regmem_18_10" BEL
+        "cpuall/RegFile/regmem_18_9" BEL "cpuall/RegFile/regmem_18_8" BEL
+        "cpuall/RegFile/regmem_18_7" BEL "cpuall/RegFile/regmem_18_6" BEL
+        "cpuall/RegFile/regmem_18_5" BEL "cpuall/RegFile/regmem_18_4" BEL
+        "cpuall/RegFile/regmem_18_3" BEL "cpuall/RegFile/regmem_18_2" BEL
+        "cpuall/RegFile/regmem_18_1" BEL "cpuall/RegFile/regmem_18_0" BEL
+        "cpuall/RegFile/regmem_17_31" BEL "cpuall/RegFile/regmem_17_30" BEL
+        "cpuall/RegFile/regmem_17_29" BEL "cpuall/RegFile/regmem_17_28" BEL
+        "cpuall/RegFile/regmem_17_27" BEL "cpuall/RegFile/regmem_17_26" BEL
+        "cpuall/RegFile/regmem_17_25" BEL "cpuall/RegFile/regmem_17_24" BEL
+        "cpuall/RegFile/regmem_17_23" BEL "cpuall/RegFile/regmem_17_22" BEL
+        "cpuall/RegFile/regmem_17_21" BEL "cpuall/RegFile/regmem_17_20" BEL
+        "cpuall/RegFile/regmem_17_19" BEL "cpuall/RegFile/regmem_17_18" BEL
+        "cpuall/RegFile/regmem_17_17" BEL "cpuall/RegFile/regmem_17_16" BEL
+        "cpuall/RegFile/regmem_17_15" BEL "cpuall/RegFile/regmem_17_14" BEL
+        "cpuall/RegFile/regmem_17_13" BEL "cpuall/RegFile/regmem_17_12" BEL
+        "cpuall/RegFile/regmem_17_11" BEL "cpuall/RegFile/regmem_17_10" BEL
+        "cpuall/RegFile/regmem_17_9" BEL "cpuall/RegFile/regmem_17_8" BEL
+        "cpuall/RegFile/regmem_17_7" BEL "cpuall/RegFile/regmem_17_6" BEL
+        "cpuall/RegFile/regmem_17_5" BEL "cpuall/RegFile/regmem_17_4" BEL
+        "cpuall/RegFile/regmem_17_3" BEL "cpuall/RegFile/regmem_17_2" BEL
+        "cpuall/RegFile/regmem_17_1" BEL "cpuall/RegFile/regmem_17_0" BEL
+        "cpuall/RegFile/regmem_16_31" BEL "cpuall/RegFile/regmem_16_30" BEL
+        "cpuall/RegFile/regmem_16_29" BEL "cpuall/RegFile/regmem_16_28" BEL
+        "cpuall/RegFile/regmem_16_27" BEL "cpuall/RegFile/regmem_16_26" BEL
+        "cpuall/RegFile/regmem_16_25" BEL "cpuall/RegFile/regmem_16_24" BEL
+        "cpuall/RegFile/regmem_16_23" BEL "cpuall/RegFile/regmem_16_22" BEL
+        "cpuall/RegFile/regmem_16_21" BEL "cpuall/RegFile/regmem_16_20" BEL
+        "cpuall/RegFile/regmem_16_19" BEL "cpuall/RegFile/regmem_16_18" BEL
+        "cpuall/RegFile/regmem_16_17" BEL "cpuall/RegFile/regmem_16_16" BEL
+        "cpuall/RegFile/regmem_16_15" BEL "cpuall/RegFile/regmem_16_14" BEL
+        "cpuall/RegFile/regmem_16_13" BEL "cpuall/RegFile/regmem_16_12" BEL
+        "cpuall/RegFile/regmem_16_11" BEL "cpuall/RegFile/regmem_16_10" BEL
+        "cpuall/RegFile/regmem_16_9" BEL "cpuall/RegFile/regmem_16_8" BEL
+        "cpuall/RegFile/regmem_16_7" BEL "cpuall/RegFile/regmem_16_6" BEL
+        "cpuall/RegFile/regmem_16_5" BEL "cpuall/RegFile/regmem_16_4" BEL
+        "cpuall/RegFile/regmem_16_3" BEL "cpuall/RegFile/regmem_16_2" BEL
+        "cpuall/RegFile/regmem_16_1" BEL "cpuall/RegFile/regmem_16_0" BEL
+        "cpuall/RegFile/regmem_15_31" BEL "cpuall/RegFile/regmem_15_30" BEL
+        "cpuall/RegFile/regmem_15_29" BEL "cpuall/RegFile/regmem_15_28" BEL
+        "cpuall/RegFile/regmem_15_27" BEL "cpuall/RegFile/regmem_15_26" BEL
+        "cpuall/RegFile/regmem_15_25" BEL "cpuall/RegFile/regmem_15_24" BEL
+        "cpuall/RegFile/regmem_15_23" BEL "cpuall/RegFile/regmem_15_22" BEL
+        "cpuall/RegFile/regmem_15_21" BEL "cpuall/RegFile/regmem_15_20" BEL
+        "cpuall/RegFile/regmem_15_19" BEL "cpuall/RegFile/regmem_15_18" BEL
+        "cpuall/RegFile/regmem_15_17" BEL "cpuall/RegFile/regmem_15_16" BEL
+        "cpuall/RegFile/regmem_15_15" BEL "cpuall/RegFile/regmem_15_14" BEL
+        "cpuall/RegFile/regmem_15_13" BEL "cpuall/RegFile/regmem_15_12" BEL
+        "cpuall/RegFile/regmem_15_11" BEL "cpuall/RegFile/regmem_15_10" BEL
+        "cpuall/RegFile/regmem_15_9" BEL "cpuall/RegFile/regmem_15_8" BEL
+        "cpuall/RegFile/regmem_15_7" BEL "cpuall/RegFile/regmem_15_6" BEL
+        "cpuall/RegFile/regmem_15_5" BEL "cpuall/RegFile/regmem_15_4" BEL
+        "cpuall/RegFile/regmem_15_3" BEL "cpuall/RegFile/regmem_15_2" BEL
+        "cpuall/RegFile/regmem_15_1" BEL "cpuall/RegFile/regmem_15_0" BEL
+        "cpuall/RegFile/regmem_14_31" BEL "cpuall/RegFile/regmem_14_30" BEL
+        "cpuall/RegFile/regmem_14_29" BEL "cpuall/RegFile/regmem_14_28" BEL
+        "cpuall/RegFile/regmem_14_27" BEL "cpuall/RegFile/regmem_14_26" BEL
+        "cpuall/RegFile/regmem_14_25" BEL "cpuall/RegFile/regmem_14_24" BEL
+        "cpuall/RegFile/regmem_14_23" BEL "cpuall/RegFile/regmem_14_22" BEL
+        "cpuall/RegFile/regmem_14_21" BEL "cpuall/RegFile/regmem_14_20" BEL
+        "cpuall/RegFile/regmem_14_19" BEL "cpuall/RegFile/regmem_14_18" BEL
+        "cpuall/RegFile/regmem_14_17" BEL "cpuall/RegFile/regmem_14_16" BEL
+        "cpuall/RegFile/regmem_14_15" BEL "cpuall/RegFile/regmem_14_14" BEL
+        "cpuall/RegFile/regmem_14_13" BEL "cpuall/RegFile/regmem_14_12" BEL
+        "cpuall/RegFile/regmem_14_11" BEL "cpuall/RegFile/regmem_14_10" BEL
+        "cpuall/RegFile/regmem_14_9" BEL "cpuall/RegFile/regmem_14_8" BEL
+        "cpuall/RegFile/regmem_14_7" BEL "cpuall/RegFile/regmem_14_6" BEL
+        "cpuall/RegFile/regmem_14_5" BEL "cpuall/RegFile/regmem_14_4" BEL
+        "cpuall/RegFile/regmem_14_3" BEL "cpuall/RegFile/regmem_14_2" BEL
+        "cpuall/RegFile/regmem_14_1" BEL "cpuall/RegFile/regmem_14_0" BEL
+        "cpuall/RegFile/regmem_13_31" BEL "cpuall/RegFile/regmem_13_30" BEL
+        "cpuall/RegFile/regmem_13_29" BEL "cpuall/RegFile/regmem_13_28" BEL
+        "cpuall/RegFile/regmem_13_27" BEL "cpuall/RegFile/regmem_13_26" BEL
+        "cpuall/RegFile/regmem_13_25" BEL "cpuall/RegFile/regmem_13_24" BEL
+        "cpuall/RegFile/regmem_13_23" BEL "cpuall/RegFile/regmem_13_22" BEL
+        "cpuall/RegFile/regmem_13_21" BEL "cpuall/RegFile/regmem_13_20" BEL
+        "cpuall/RegFile/regmem_13_19" BEL "cpuall/RegFile/regmem_13_18" BEL
+        "cpuall/RegFile/regmem_13_17" BEL "cpuall/RegFile/regmem_13_16" BEL
+        "cpuall/RegFile/regmem_13_15" BEL "cpuall/RegFile/regmem_13_14" BEL
+        "cpuall/RegFile/regmem_13_13" BEL "cpuall/RegFile/regmem_13_12" BEL
+        "cpuall/RegFile/regmem_13_11" BEL "cpuall/RegFile/regmem_13_10" BEL
+        "cpuall/RegFile/regmem_13_9" BEL "cpuall/RegFile/regmem_13_8" BEL
+        "cpuall/RegFile/regmem_13_7" BEL "cpuall/RegFile/regmem_13_6" BEL
+        "cpuall/RegFile/regmem_13_5" BEL "cpuall/RegFile/regmem_13_4" BEL
+        "cpuall/RegFile/regmem_13_3" BEL "cpuall/RegFile/regmem_13_2" BEL
+        "cpuall/RegFile/regmem_13_1" BEL "cpuall/RegFile/regmem_13_0" BEL
+        "cpuall/RegFile/regmem_11_31" BEL "cpuall/RegFile/regmem_11_30" BEL
+        "cpuall/RegFile/regmem_11_29" BEL "cpuall/RegFile/regmem_11_28" BEL
+        "cpuall/RegFile/regmem_11_27" BEL "cpuall/RegFile/regmem_11_26" BEL
+        "cpuall/RegFile/regmem_11_25" BEL "cpuall/RegFile/regmem_11_24" BEL
+        "cpuall/RegFile/regmem_11_23" BEL "cpuall/RegFile/regmem_11_22" BEL
+        "cpuall/RegFile/regmem_11_21" BEL "cpuall/RegFile/regmem_11_20" BEL
+        "cpuall/RegFile/regmem_11_19" BEL "cpuall/RegFile/regmem_11_18" BEL
+        "cpuall/RegFile/regmem_11_17" BEL "cpuall/RegFile/regmem_11_16" BEL
+        "cpuall/RegFile/regmem_11_15" BEL "cpuall/RegFile/regmem_11_14" BEL
+        "cpuall/RegFile/regmem_11_13" BEL "cpuall/RegFile/regmem_11_12" BEL
+        "cpuall/RegFile/regmem_11_11" BEL "cpuall/RegFile/regmem_11_10" BEL
+        "cpuall/RegFile/regmem_11_9" BEL "cpuall/RegFile/regmem_11_8" BEL
+        "cpuall/RegFile/regmem_11_7" BEL "cpuall/RegFile/regmem_11_6" BEL
+        "cpuall/RegFile/regmem_11_5" BEL "cpuall/RegFile/regmem_11_4" BEL
+        "cpuall/RegFile/regmem_11_3" BEL "cpuall/RegFile/regmem_11_2" BEL
+        "cpuall/RegFile/regmem_11_1" BEL "cpuall/RegFile/regmem_11_0" BEL
+        "cpuall/RegFile/regmem_10_31" BEL "cpuall/RegFile/regmem_10_30" BEL
+        "cpuall/RegFile/regmem_10_29" BEL "cpuall/RegFile/regmem_10_28" BEL
+        "cpuall/RegFile/regmem_10_27" BEL "cpuall/RegFile/regmem_10_26" BEL
+        "cpuall/RegFile/regmem_10_25" BEL "cpuall/RegFile/regmem_10_24" BEL
+        "cpuall/RegFile/regmem_10_23" BEL "cpuall/RegFile/regmem_10_22" BEL
+        "cpuall/RegFile/regmem_10_21" BEL "cpuall/RegFile/regmem_10_20" BEL
+        "cpuall/RegFile/regmem_10_19" BEL "cpuall/RegFile/regmem_10_18" BEL
+        "cpuall/RegFile/regmem_10_17" BEL "cpuall/RegFile/regmem_10_16" BEL
+        "cpuall/RegFile/regmem_10_15" BEL "cpuall/RegFile/regmem_10_14" BEL
+        "cpuall/RegFile/regmem_10_13" BEL "cpuall/RegFile/regmem_10_12" BEL
+        "cpuall/RegFile/regmem_10_11" BEL "cpuall/RegFile/regmem_10_10" BEL
+        "cpuall/RegFile/regmem_10_9" BEL "cpuall/RegFile/regmem_10_8" BEL
+        "cpuall/RegFile/regmem_10_7" BEL "cpuall/RegFile/regmem_10_6" BEL
+        "cpuall/RegFile/regmem_10_5" BEL "cpuall/RegFile/regmem_10_4" BEL
+        "cpuall/RegFile/regmem_10_3" BEL "cpuall/RegFile/regmem_10_2" BEL
+        "cpuall/RegFile/regmem_10_1" BEL "cpuall/RegFile/regmem_10_0" BEL
+        "cpuall/RegFile/regmem_12_31" BEL "cpuall/RegFile/regmem_12_30" BEL
+        "cpuall/RegFile/regmem_12_29" BEL "cpuall/RegFile/regmem_12_28" BEL
+        "cpuall/RegFile/regmem_12_27" BEL "cpuall/RegFile/regmem_12_26" BEL
+        "cpuall/RegFile/regmem_12_25" BEL "cpuall/RegFile/regmem_12_24" BEL
+        "cpuall/RegFile/regmem_12_23" BEL "cpuall/RegFile/regmem_12_22" BEL
+        "cpuall/RegFile/regmem_12_21" BEL "cpuall/RegFile/regmem_12_20" BEL
+        "cpuall/RegFile/regmem_12_19" BEL "cpuall/RegFile/regmem_12_18" BEL
+        "cpuall/RegFile/regmem_12_17" BEL "cpuall/RegFile/regmem_12_16" BEL
+        "cpuall/RegFile/regmem_12_15" BEL "cpuall/RegFile/regmem_12_14" BEL
+        "cpuall/RegFile/regmem_12_13" BEL "cpuall/RegFile/regmem_12_12" BEL
+        "cpuall/RegFile/regmem_12_11" BEL "cpuall/RegFile/regmem_12_10" BEL
+        "cpuall/RegFile/regmem_12_9" BEL "cpuall/RegFile/regmem_12_8" BEL
+        "cpuall/RegFile/regmem_12_7" BEL "cpuall/RegFile/regmem_12_6" BEL
+        "cpuall/RegFile/regmem_12_5" BEL "cpuall/RegFile/regmem_12_4" BEL
+        "cpuall/RegFile/regmem_12_3" BEL "cpuall/RegFile/regmem_12_2" BEL
+        "cpuall/RegFile/regmem_12_1" BEL "cpuall/RegFile/regmem_12_0" BEL
+        "cpuall/RegFile/regmem_9_31" BEL "cpuall/RegFile/regmem_9_30" BEL
+        "cpuall/RegFile/regmem_9_29" BEL "cpuall/RegFile/regmem_9_28" BEL
+        "cpuall/RegFile/regmem_9_27" BEL "cpuall/RegFile/regmem_9_26" BEL
+        "cpuall/RegFile/regmem_9_25" BEL "cpuall/RegFile/regmem_9_24" BEL
+        "cpuall/RegFile/regmem_9_23" BEL "cpuall/RegFile/regmem_9_22" BEL
+        "cpuall/RegFile/regmem_9_21" BEL "cpuall/RegFile/regmem_9_20" BEL
+        "cpuall/RegFile/regmem_9_19" BEL "cpuall/RegFile/regmem_9_18" BEL
+        "cpuall/RegFile/regmem_9_17" BEL "cpuall/RegFile/regmem_9_16" BEL
+        "cpuall/RegFile/regmem_9_15" BEL "cpuall/RegFile/regmem_9_14" BEL
+        "cpuall/RegFile/regmem_9_13" BEL "cpuall/RegFile/regmem_9_12" BEL
+        "cpuall/RegFile/regmem_9_11" BEL "cpuall/RegFile/regmem_9_10" BEL
+        "cpuall/RegFile/regmem_9_9" BEL "cpuall/RegFile/regmem_9_8" BEL
+        "cpuall/RegFile/regmem_9_7" BEL "cpuall/RegFile/regmem_9_6" BEL
+        "cpuall/RegFile/regmem_9_5" BEL "cpuall/RegFile/regmem_9_4" BEL
+        "cpuall/RegFile/regmem_9_3" BEL "cpuall/RegFile/regmem_9_2" BEL
+        "cpuall/RegFile/regmem_9_1" BEL "cpuall/RegFile/regmem_9_0" BEL
+        "cpuall/RegFile/regmem_8_31" BEL "cpuall/RegFile/regmem_8_30" BEL
+        "cpuall/RegFile/regmem_8_29" BEL "cpuall/RegFile/regmem_8_28" BEL
+        "cpuall/RegFile/regmem_8_27" BEL "cpuall/RegFile/regmem_8_26" BEL
+        "cpuall/RegFile/regmem_8_25" BEL "cpuall/RegFile/regmem_8_24" BEL
+        "cpuall/RegFile/regmem_8_23" BEL "cpuall/RegFile/regmem_8_22" BEL
+        "cpuall/RegFile/regmem_8_21" BEL "cpuall/RegFile/regmem_8_20" BEL
+        "cpuall/RegFile/regmem_8_19" BEL "cpuall/RegFile/regmem_8_18" BEL
+        "cpuall/RegFile/regmem_8_17" BEL "cpuall/RegFile/regmem_8_16" BEL
+        "cpuall/RegFile/regmem_8_15" BEL "cpuall/RegFile/regmem_8_14" BEL
+        "cpuall/RegFile/regmem_8_13" BEL "cpuall/RegFile/regmem_8_12" BEL
+        "cpuall/RegFile/regmem_8_11" BEL "cpuall/RegFile/regmem_8_10" BEL
+        "cpuall/RegFile/regmem_8_9" BEL "cpuall/RegFile/regmem_8_8" BEL
+        "cpuall/RegFile/regmem_8_7" BEL "cpuall/RegFile/regmem_8_6" BEL
+        "cpuall/RegFile/regmem_8_5" BEL "cpuall/RegFile/regmem_8_4" BEL
+        "cpuall/RegFile/regmem_8_3" BEL "cpuall/RegFile/regmem_8_2" BEL
+        "cpuall/RegFile/regmem_8_1" BEL "cpuall/RegFile/regmem_8_0" BEL
+        "cpuall/RegFile/regmem_7_31" BEL "cpuall/RegFile/regmem_7_30" BEL
+        "cpuall/RegFile/regmem_7_29" BEL "cpuall/RegFile/regmem_7_28" BEL
+        "cpuall/RegFile/regmem_7_27" BEL "cpuall/RegFile/regmem_7_26" BEL
+        "cpuall/RegFile/regmem_7_25" BEL "cpuall/RegFile/regmem_7_24" BEL
+        "cpuall/RegFile/regmem_7_23" BEL "cpuall/RegFile/regmem_7_22" BEL
+        "cpuall/RegFile/regmem_7_21" BEL "cpuall/RegFile/regmem_7_20" BEL
+        "cpuall/RegFile/regmem_7_19" BEL "cpuall/RegFile/regmem_7_18" BEL
+        "cpuall/RegFile/regmem_7_17" BEL "cpuall/RegFile/regmem_7_16" BEL
+        "cpuall/RegFile/regmem_7_15" BEL "cpuall/RegFile/regmem_7_14" BEL
+        "cpuall/RegFile/regmem_7_13" BEL "cpuall/RegFile/regmem_7_12" BEL
+        "cpuall/RegFile/regmem_7_11" BEL "cpuall/RegFile/regmem_7_10" BEL
+        "cpuall/RegFile/regmem_7_9" BEL "cpuall/RegFile/regmem_7_8" BEL
+        "cpuall/RegFile/regmem_7_7" BEL "cpuall/RegFile/regmem_7_6" BEL
+        "cpuall/RegFile/regmem_7_5" BEL "cpuall/RegFile/regmem_7_4" BEL
+        "cpuall/RegFile/regmem_7_3" BEL "cpuall/RegFile/regmem_7_2" BEL
+        "cpuall/RegFile/regmem_7_1" BEL "cpuall/RegFile/regmem_7_0" BEL
+        "cpuall/RegFile/regmem_6_31" BEL "cpuall/RegFile/regmem_6_30" BEL
+        "cpuall/RegFile/regmem_6_29" BEL "cpuall/RegFile/regmem_6_28" BEL
+        "cpuall/RegFile/regmem_6_27" BEL "cpuall/RegFile/regmem_6_26" BEL
+        "cpuall/RegFile/regmem_6_25" BEL "cpuall/RegFile/regmem_6_24" BEL
+        "cpuall/RegFile/regmem_6_23" BEL "cpuall/RegFile/regmem_6_22" BEL
+        "cpuall/RegFile/regmem_6_21" BEL "cpuall/RegFile/regmem_6_20" BEL
+        "cpuall/RegFile/regmem_6_19" BEL "cpuall/RegFile/regmem_6_18" BEL
+        "cpuall/RegFile/regmem_6_17" BEL "cpuall/RegFile/regmem_6_16" BEL
+        "cpuall/RegFile/regmem_6_15" BEL "cpuall/RegFile/regmem_6_14" BEL
+        "cpuall/RegFile/regmem_6_13" BEL "cpuall/RegFile/regmem_6_12" BEL
+        "cpuall/RegFile/regmem_6_11" BEL "cpuall/RegFile/regmem_6_10" BEL
+        "cpuall/RegFile/regmem_6_9" BEL "cpuall/RegFile/regmem_6_8" BEL
+        "cpuall/RegFile/regmem_6_7" BEL "cpuall/RegFile/regmem_6_6" BEL
+        "cpuall/RegFile/regmem_6_5" BEL "cpuall/RegFile/regmem_6_4" BEL
+        "cpuall/RegFile/regmem_6_3" BEL "cpuall/RegFile/regmem_6_2" BEL
+        "cpuall/RegFile/regmem_6_1" BEL "cpuall/RegFile/regmem_6_0" BEL
+        "cpuall/RegFile/regmem_5_31" BEL "cpuall/RegFile/regmem_5_30" BEL
+        "cpuall/RegFile/regmem_5_29" BEL "cpuall/RegFile/regmem_5_28" BEL
+        "cpuall/RegFile/regmem_5_27" BEL "cpuall/RegFile/regmem_5_26" BEL
+        "cpuall/RegFile/regmem_5_25" BEL "cpuall/RegFile/regmem_5_24" BEL
+        "cpuall/RegFile/regmem_5_23" BEL "cpuall/RegFile/regmem_5_22" BEL
+        "cpuall/RegFile/regmem_5_21" BEL "cpuall/RegFile/regmem_5_20" BEL
+        "cpuall/RegFile/regmem_5_19" BEL "cpuall/RegFile/regmem_5_18" BEL
+        "cpuall/RegFile/regmem_5_17" BEL "cpuall/RegFile/regmem_5_16" BEL
+        "cpuall/RegFile/regmem_5_15" BEL "cpuall/RegFile/regmem_5_14" BEL
+        "cpuall/RegFile/regmem_5_13" BEL "cpuall/RegFile/regmem_5_12" BEL
+        "cpuall/RegFile/regmem_5_11" BEL "cpuall/RegFile/regmem_5_10" BEL
+        "cpuall/RegFile/regmem_5_9" BEL "cpuall/RegFile/regmem_5_8" BEL
+        "cpuall/RegFile/regmem_5_7" BEL "cpuall/RegFile/regmem_5_6" BEL
+        "cpuall/RegFile/regmem_5_5" BEL "cpuall/RegFile/regmem_5_4" BEL
+        "cpuall/RegFile/regmem_5_3" BEL "cpuall/RegFile/regmem_5_2" BEL
+        "cpuall/RegFile/regmem_5_1" BEL "cpuall/RegFile/regmem_5_0" BEL
+        "cpuall/RegFile/regmem_4_31" BEL "cpuall/RegFile/regmem_4_30" BEL
+        "cpuall/RegFile/regmem_4_29" BEL "cpuall/RegFile/regmem_4_28" BEL
+        "cpuall/RegFile/regmem_4_27" BEL "cpuall/RegFile/regmem_4_26" BEL
+        "cpuall/RegFile/regmem_4_25" BEL "cpuall/RegFile/regmem_4_24" BEL
+        "cpuall/RegFile/regmem_4_23" BEL "cpuall/RegFile/regmem_4_22" BEL
+        "cpuall/RegFile/regmem_4_21" BEL "cpuall/RegFile/regmem_4_20" BEL
+        "cpuall/RegFile/regmem_4_19" BEL "cpuall/RegFile/regmem_4_18" BEL
+        "cpuall/RegFile/regmem_4_17" BEL "cpuall/RegFile/regmem_4_16" BEL
+        "cpuall/RegFile/regmem_4_15" BEL "cpuall/RegFile/regmem_4_14" BEL
+        "cpuall/RegFile/regmem_4_13" BEL "cpuall/RegFile/regmem_4_12" BEL
+        "cpuall/RegFile/regmem_4_11" BEL "cpuall/RegFile/regmem_4_10" BEL
+        "cpuall/RegFile/regmem_4_9" BEL "cpuall/RegFile/regmem_4_8" BEL
+        "cpuall/RegFile/regmem_4_7" BEL "cpuall/RegFile/regmem_4_6" BEL
+        "cpuall/RegFile/regmem_4_5" BEL "cpuall/RegFile/regmem_4_4" BEL
+        "cpuall/RegFile/regmem_4_3" BEL "cpuall/RegFile/regmem_4_2" BEL
+        "cpuall/RegFile/regmem_4_1" BEL "cpuall/RegFile/regmem_4_0" BEL
+        "cpuall/RegFile/regmem_2_31" BEL "cpuall/RegFile/regmem_2_30" BEL
+        "cpuall/RegFile/regmem_2_29" BEL "cpuall/RegFile/regmem_2_28" BEL
+        "cpuall/RegFile/regmem_2_27" BEL "cpuall/RegFile/regmem_2_26" BEL
+        "cpuall/RegFile/regmem_2_25" BEL "cpuall/RegFile/regmem_2_24" BEL
+        "cpuall/RegFile/regmem_2_23" BEL "cpuall/RegFile/regmem_2_22" BEL
+        "cpuall/RegFile/regmem_2_21" BEL "cpuall/RegFile/regmem_2_20" BEL
+        "cpuall/RegFile/regmem_2_19" BEL "cpuall/RegFile/regmem_2_18" BEL
+        "cpuall/RegFile/regmem_2_17" BEL "cpuall/RegFile/regmem_2_16" BEL
+        "cpuall/RegFile/regmem_2_15" BEL "cpuall/RegFile/regmem_2_14" BEL
+        "cpuall/RegFile/regmem_2_13" BEL "cpuall/RegFile/regmem_2_12" BEL
+        "cpuall/RegFile/regmem_2_11" BEL "cpuall/RegFile/regmem_2_10" BEL
+        "cpuall/RegFile/regmem_2_9" BEL "cpuall/RegFile/regmem_2_8" BEL
+        "cpuall/RegFile/regmem_2_7" BEL "cpuall/RegFile/regmem_2_6" BEL
+        "cpuall/RegFile/regmem_2_5" BEL "cpuall/RegFile/regmem_2_4" BEL
+        "cpuall/RegFile/regmem_2_3" BEL "cpuall/RegFile/regmem_2_2" BEL
+        "cpuall/RegFile/regmem_2_1" BEL "cpuall/RegFile/regmem_2_0" BEL
+        "cpuall/RegFile/regmem_1_31" BEL "cpuall/RegFile/regmem_1_30" BEL
+        "cpuall/RegFile/regmem_1_29" BEL "cpuall/RegFile/regmem_1_28" BEL
+        "cpuall/RegFile/regmem_1_27" BEL "cpuall/RegFile/regmem_1_26" BEL
+        "cpuall/RegFile/regmem_1_25" BEL "cpuall/RegFile/regmem_1_24" BEL
+        "cpuall/RegFile/regmem_1_23" BEL "cpuall/RegFile/regmem_1_22" BEL
+        "cpuall/RegFile/regmem_1_21" BEL "cpuall/RegFile/regmem_1_20" BEL
+        "cpuall/RegFile/regmem_1_19" BEL "cpuall/RegFile/regmem_1_18" BEL
+        "cpuall/RegFile/regmem_1_17" BEL "cpuall/RegFile/regmem_1_16" BEL
+        "cpuall/RegFile/regmem_1_15" BEL "cpuall/RegFile/regmem_1_14" BEL
+        "cpuall/RegFile/regmem_1_13" BEL "cpuall/RegFile/regmem_1_12" BEL
+        "cpuall/RegFile/regmem_1_11" BEL "cpuall/RegFile/regmem_1_10" BEL
+        "cpuall/RegFile/regmem_1_9" BEL "cpuall/RegFile/regmem_1_8" BEL
+        "cpuall/RegFile/regmem_1_7" BEL "cpuall/RegFile/regmem_1_6" BEL
+        "cpuall/RegFile/regmem_1_5" BEL "cpuall/RegFile/regmem_1_4" BEL
+        "cpuall/RegFile/regmem_1_3" BEL "cpuall/RegFile/regmem_1_2" BEL
+        "cpuall/RegFile/regmem_1_1" BEL "cpuall/RegFile/regmem_1_0" BEL
+        "cpuall/RegFile/regmem_3_31" BEL "cpuall/RegFile/regmem_3_30" BEL
+        "cpuall/RegFile/regmem_3_29" BEL "cpuall/RegFile/regmem_3_28" BEL
+        "cpuall/RegFile/regmem_3_27" BEL "cpuall/RegFile/regmem_3_26" BEL
+        "cpuall/RegFile/regmem_3_25" BEL "cpuall/RegFile/regmem_3_24" BEL
+        "cpuall/RegFile/regmem_3_23" BEL "cpuall/RegFile/regmem_3_22" BEL
+        "cpuall/RegFile/regmem_3_21" BEL "cpuall/RegFile/regmem_3_20" BEL
+        "cpuall/RegFile/regmem_3_19" BEL "cpuall/RegFile/regmem_3_18" BEL
+        "cpuall/RegFile/regmem_3_17" BEL "cpuall/RegFile/regmem_3_16" BEL
+        "cpuall/RegFile/regmem_3_15" BEL "cpuall/RegFile/regmem_3_14" BEL
+        "cpuall/RegFile/regmem_3_13" BEL "cpuall/RegFile/regmem_3_12" BEL
+        "cpuall/RegFile/regmem_3_11" BEL "cpuall/RegFile/regmem_3_10" BEL
+        "cpuall/RegFile/regmem_3_9" BEL "cpuall/RegFile/regmem_3_8" BEL
+        "cpuall/RegFile/regmem_3_7" BEL "cpuall/RegFile/regmem_3_6" BEL
+        "cpuall/RegFile/regmem_3_5" BEL "cpuall/RegFile/regmem_3_4" BEL
+        "cpuall/RegFile/regmem_3_3" BEL "cpuall/RegFile/regmem_3_2" BEL
+        "cpuall/RegFile/regmem_3_1" BEL "cpuall/RegFile/regmem_3_0" BEL
+        "cpuall/InstrFetch/PC/output_6_1" BEL
+        "cpuall/InstrFetch/PC/output_1_1" BEL
+        "cpuall/InstrFetch/PC/output_3_1" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

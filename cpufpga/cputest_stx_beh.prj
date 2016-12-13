@@ -1,0 +1,3 @@
+vhdl isim_temp "cputest.vhd"
+vhdl isim_temp "cpufpga.vhd"
+vhdl isim_temp "cpu.vhd"

@@ -1,0 +1,82 @@
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf 
+bitgen -intstyle ise -f cpufpga.ut cpufpga.ncd 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf 
+bitgen -intstyle ise -f cpufpga.ut cpufpga.ncd 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf 
+bitgen -intstyle ise -f cpufpga.ut cpufpga.ncd 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf 
+bitgen -intstyle ise -f cpufpga.ut cpufpga.ncd 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf 
+bitgen -intstyle ise -f cpufpga.ut cpufpga.ncd 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf 
+bitgen -intstyle ise -f cpufpga.ut cpufpga.ncd 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf 
+bitgen -intstyle ise -f cpufpga.ut cpufpga.ncd 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf 
+bitgen -intstyle ise -f cpufpga.ut cpufpga.ncd 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf 
+bitgen -intstyle ise -f cpufpga.ut cpufpga.ncd 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf 
+xst -intstyle ise -ifn "C:/NYU VHDL/cpufpga/cpufpga.xst" -ofn "C:/NYU VHDL/cpufpga/cpufpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/xpan0/Desktop/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 "cpufpga.ngc" cpufpga.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cpufpga_map.ncd cpufpga.ngd cpufpga.pcf 
+par -w -intstyle ise -ol high -mt off cpufpga_map.ncd cpufpga.ncd cpufpga.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml cpufpga.twx cpufpga.ncd -o cpufpga.twr cpufpga.pcf 
